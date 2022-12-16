@@ -1,0 +1,39 @@
+.crimson{
+    background: #121FCF;
+background: linear-gradient(to right, #CF1000 0%, #CF1512 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+
+.cool{
+    background: #CF6E00;
+background: repeating-radial-gradient(circle farthest-corner at center center, #CF6E00 0%, #CF0075 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+
+.grey{
+    background: #F5F5F5;
+background: radial-gradient(ellipse farthest-corner at top center, #F5F5F5 0%, #CFCFCF 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+
+.green{
+    background: rgb(33,204,36);
+background: linear-gradient(90deg, rgba(33,204,36,1) 0%, rgba(219,205,19,1) 41%, rgba(0,255,79,1) 100%);
+    -webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+
+.blue{
+    background: rgb(34,193,195);
+background: linear-gradient(232deg, rgba(34,193,195,1) 0%, rgba(45,173,253,1) 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+
+}
+.neonText {
+    color: #fff;
+    text-shadow: 1px 0px 20px #f547c3;
+  }
