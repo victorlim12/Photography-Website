@@ -1,4 +1,5 @@
 import Display from "./Components/Banner";
+import Hero from "./Components/Hero";
 import { ThemeProvider, createTheme, responsiveFontSizes } from '@mui/material/styles';
 
 
@@ -15,7 +16,7 @@ theme = responsiveFontSizes(theme);
 function App() {
   return (
     <ThemeProvider theme={theme}>
-      <Display/>
+      <Hero/>
     </ThemeProvider>
   );
 }
