@@ -25,20 +25,21 @@ width: fit-content;
   border-radius:10px;
   /** Top, bottom, right, and left spacing between form and it's content **/
   justify-self:'center';
-  margin-bottom: 4%;
+  margin-bottom: 2%;
+  margin: 1%;
   /** Spacing from the top **/
 
   @media screen and (max-width: 768px) {
     background-image:linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0,0,0,0.2),  rgba(255, 102, 0, 0)),url(${(props) => props.Background});
-    min-height:50vh;
+    min-height:30vh;
     min-width: 80vw;
   }
 `
 export const CardContent= styled.div`
-    padding:3%;
+    padding:5%;
     height:inherit;
     @media screen and (max-width: 768px) {
-    margin-top: 50%;
+    margin-top: 40%;
   }
 
 `
