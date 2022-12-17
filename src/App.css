@@ -86,7 +86,7 @@
   flex-direction: row;
   font-size: calc(10px + 2vmin);
   width: 100wh;
-  height: 100vh;
+  height:fit-content;
   color: #fff;
   -webkit-animation: Gradient 15s ease infinite;
   -moz-animation: Gradient 15s ease infinite;
@@ -94,15 +94,14 @@
 }
 
 .normal{
-  background-color: #000000;
+  background-color: #000000 ;
   background-size:cover;
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: row;
   font-size: calc(10px + 2vmin);
   width: 100wh;
-  height: 100vh;
+  height:fit-content;
   color: #fff;
   -webkit-animation: Gradient 15s ease infinite;
   -moz-animation: Gradient 15s ease infinite;

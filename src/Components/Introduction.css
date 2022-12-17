@@ -1,0 +1,44 @@
+.card{
+    width: fit-content; 
+  /** Sizeable height for the form **/
+  height:fit-content;
+  min-height: 40vh;
+  max-Width:75vw;
+  min-Width:75vw;
+  /** Black color with opacity **/
+  background-image:linear-gradient(to right, rgba(0, 0, 0, 1), rgba(255,255,255,0),  rgba(255, 102, 0, 0)),url('../Images/bg1.png');
+  background-size: cover;
+  background-position: center;
+  backdrop-filter:blur(10px);
+  box-shadow: 10px 10px 10px rgba(30,30,30,1);
+  /** Responsive layout **/
+  display:flex;
+  /** One element on top of the other **/
+  flex-direction:column;
+  /** Vertically at the center **/
+  justify-content: center;
+  /** Smooth corners **/
+  border-radius:10px;
+  /** Top, bottom, right, and left spacing between form and it's content **/
+  justify-self:'center';
+  margin-bottom: 4%
+  /** Spacing from the top **/
+}
+
+.card-content{
+    padding:3%;
+    height:inherit;
+}
+@media screen and (max-width: 768px) {
+    .card{
+        background-image:linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0,0,0,0.2),  rgba(255, 102, 0, 0)),url('../Images/bg1.png');
+        min-height:50vh;
+        min-width: 80vw;
+    }
+    .card-content{
+        height:inherit;
+        margin-top: 50%;
+    }
+      }
+
+

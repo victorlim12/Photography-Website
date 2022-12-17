@@ -67,7 +67,6 @@ export const MorphCard = styled.div`
   border-color: whitesmoke;
   border-radius: 1.2rem; 
   /** Top, bottom, right, and left spacing between form and it's content **/
-  padding:8%;
   /** Spacing from the top **/
   margin-top:4%;
 `
