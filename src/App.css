@@ -59,7 +59,7 @@
   /** Sizeable height for the form **/
   height:fit-content;
   /** Black color with opacity **/
-  background-image:linear-gradient(to bottom right, rgba(255, 255, 255, 0.131), rgba(255,255,255,0));
+  background-image:linear-gradient(to bottom right, rgba(255, 68, 204, 0.4), rgba(255,255,255,0));
   backdrop-filter:blur(10px);
   box-shadow: 10px 10px 10px rgba(30,30,30,0.5);
   /** Responsive layout **/
@@ -77,8 +77,9 @@
 }
 
 .image-bg{
+  background-image:linear-gradient(to bottom right, rgba(255, 68, 204, 0.14), rgba(255,255,255,0),  rgba(255, 102, 0, 0));
   background-color: #000000;
-  background-size:40%;
+  background-size:cover;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -92,14 +93,13 @@
   animation: Gradient 15s ease infinite;
 }
 
-.after{
-  background-image:url('Images/BACK.jpg'),;
-  background-color: #00000f;
+.normal{
+  background-color: #000000;
   background-size:cover;
   display: flex;
-  flex-direction: row;
   align-items: center;
   justify-content: center;
+  flex-direction: row;
   font-size: calc(10px + 2vmin);
   width: 100wh;
   height: 100vh;
@@ -111,7 +111,6 @@
 
 .color-bg {
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);

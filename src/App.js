@@ -1,6 +1,7 @@
 import Display from "./Components/Banner";
 import Hero from "./Components/Hero";
 import { ThemeProvider, createTheme, responsiveFontSizes } from '@mui/material/styles';
+import Introduction from "./Components/Introduction";
 
 
 let theme = createTheme({
@@ -17,6 +18,7 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       <Hero/>
+      <Introduction/>
     </ThemeProvider>
   );
 }
