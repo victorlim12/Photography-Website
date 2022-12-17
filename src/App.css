@@ -82,6 +82,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: row;
   font-size: calc(10px + 2vmin);
   width: 100wh;
   height: 100vh;
