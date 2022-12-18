@@ -25,14 +25,14 @@ import '../Utils/Gradient.css'
 //images (can consider CDN)
 import TEST from '../Images/bg1.png'
 import TEST2 from '../Images/bg2.jpg'
-import TEST3 from '../Images/punisher.png'
+import TEST3 from '../Images/bg6.jpg'
 
 export default function Introduction(){
 
   
     // const { scrollYProgress } = useScroll();
     // const scale = useTransform(scrollYProgress, [0, 0.5], [0, 1]);
-
+    const color='rgba(0,0,0,0)'
     return(
         <div className={'normal'} style={{
         transition: "all .5s ease",
@@ -40,36 +40,26 @@ export default function Introduction(){
         MozTransition: "all 1s ease", width: '100vw', flexDirection:'row', display:"inline-block", justifyContent:'center'
         }}>
           <Grid container sx={{justifyContent:'center', mt:'4%', height:'100%'}}>
-         <Card Background={TEST} Color={'red'} style={{justifySelf:'center'}}>
+         <Card Background={TEST} direction={'to right'} direction2={'to top'} Color={'red'} gradient={color} min={'75vw'} resize={'90vw'} style={{justifySelf:'center'}}>
             <CardContent>
                   <Typography variant="h3" fontWeight={500}><span className="blue">welcome</span> </Typography>
-                  <Typography variant="h4" fontWeight={400}>to a story that i share</Typography>
-                  <Typography variant="h4" fontWeight={400}>a narrative that i crafted.</Typography>
+                  <Typography variant="h5" fontWeight={400}>to a story that i share</Typography>
+                  <Typography variant="h5" fontWeight={400}>a narrative that i crafted.</Typography>
             </CardContent>
           </Card>
-          <Card Background={TEST2} Color={'blue'}  style={{justifySelf:'center',  minWidth:'70vw'}}>
+          <Card Background={TEST2} direction={'to top'} direction2={'to bottom'} gradient={color} Color={'blue'} min={'60vw'} resize={'55vw'} style={{justifySelf:'center'}}>
             <CardContent style={{alignItems:'center'}}>
-                  <Typography variant="h3" fontWeight={500} align='center'> <span className="green">at the bottom of</span> </Typography>
-                  <Typography variant="h4" fontWeight={400} align='center'>this soul, lies a  </Typography>
-                  <Typography variant="h4" fontWeight={400} align='center'>a narrative that i burried.</Typography>
+                  <Typography variant="h4" fontWeight={500} align='center'> <span className="green">at the bottom of</span> </Typography>
+                  <Typography variant="h5" fontWeight={400} align='center'>this soul, lies a  </Typography>
+                  <Typography variant="h5" fontWeight={400} align='center'>a narrative that i burried.</Typography>
             </CardContent>
           </Card>
-          <Card Background={TEST3} Color={'blue'}  style={{justifySelf:'center', minWidth:'20vw'}}>
+          <Card Background={TEST3} direction={'to bottom'} Color={'blue'}  gradient={color} min={'20vw'} resize={'35vw'} style={{justifySelf:'center'}}>
             <CardContent style={{alignItems:'center'}}>
-                  <Typography variant="h5" fontWeight={400} align='center'>with grace</Typography>
+                  <Typography variant="h4" fontWeight={500} align='center'><span className="blue">at the bottom of</span></Typography>
                   <Typography variant="h5" fontWeight={400} align='center'>and no regret or whatsoever</Typography>
             </CardContent>
-          </Card>
-          <Card Background={TEST3} Color={'blue'}  style={{justifySelf:'center', minWidth:'30vw'}}>
-            <CardContent style={{alignItems:'center'}}>
-                  <Typography variant="h3" fontWeight={500} align='center'> <span className="green">at the bottom of</span> </Typography>
-                  <Typography variant="h4" fontWeight={400} align='center'>this soul, lies a  </Typography>
-                  <Typography variant="h4" fontWeight={400} align='center'>a narrative that i burried.</Typography>
-            </CardContent>
-          </Card>
-          
-        
-
+          </Card>        
           </Grid>
         </div>
     

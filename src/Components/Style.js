@@ -8,9 +8,9 @@ width: fit-content;
   height:fit-content;
   min-height: 40vh;
   max-Width:75vw;
-  min-Width:75vw;
+  min-Width:${(props)=>props.min};
   /** Black color with opacity **/
-  background-image:linear-gradient(to right, rgba(0, 0, 0, 1), rgba(255,255,255,0),  rgba(255, 102, 0, 0)),url(${(props) => props.Background});
+  background-image:linear-gradient(${(props)=>props.direction}, ${(props)=>props.gradient}, rgba(255,255,255,0),  rgba(255, 102, 0, 0)),url(${(props) => props.Background});
   background-size: cover;
   background-position: center;
   backdrop-filter:blur(10px);
@@ -21,18 +21,18 @@ width: fit-content;
   flex-direction:column;
   /** Vertically at the center **/
   justify-content: center;
-  /** Smooth corners **/
-  border-radius:10px;
-  /** Top, bottom, right, and left spacing between form and it's content **/
+  border-radius:1em;
   justify-self:'center';
   margin-bottom: 2%;
   margin: 1%;
-  /** Spacing from the top **/
+
 
   @media screen and (max-width: 768px) {
-    background-image:linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0,0,0,0.2),  rgba(255, 102, 0, 0)),url(${(props) => props.Background});
-    min-height:30vh;
-    min-width: 80vw;
+    background-image:linear-gradient(${(props)=>props.direction2}, rgba(0, 0, 0, 1), rgba(0,0,0,0.2),  rgba(255, 102, 0, 0)),url(${(props) => props.Background});
+    min-height:40vh;
+    max-height:40vh;
+    min-width: ${(props)=>props.resize};
+    max-width: ${(props)=>props.resize};
   }
 `
 export const CardContent= styled.div`
