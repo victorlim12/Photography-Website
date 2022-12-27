@@ -77,9 +77,10 @@
 }
 
 .image-bg{
-  background-image:linear-gradient(to bottom right, rgba(255, 68, 204, 0.14), rgba(255,255,255,0),  rgba(255, 102, 0, 0));
+  background-image:linear-gradient(to bottom , rgba(255, 68, 204,0), rgba(0,0,0,0),  rgba(0, 0, 0, 1)), url('Images/int2.png');
   background-color: #000000;
   background-size:cover;
+  background-position: center;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -88,9 +89,9 @@
   width: 100wh;
   height:fit-content;
   color: #fff;
-  -webkit-animation: Gradient 15s ease infinite;
+  /* -webkit-animation: Gradient 15s ease infinite;
   -moz-animation: Gradient 15s ease infinite;
-  animation: Gradient 15s ease infinite;
+  animation: Gradient 15s ease infinite; */
 }
 
 .normal{

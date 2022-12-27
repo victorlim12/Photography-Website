@@ -3,15 +3,13 @@ import React from "react";
 //own utils
 import '../App.css';
 import '../Utils/Gradient.css'
-import vid from '../Images/LX_d7M.mp4'
-
 
 //MUI components
 import { Grid, Typography, Button} from "@mui/material";
 
 //import { motion, useAnimation } from "framer-motion";
-import { useAnimation, motion } from "framer-motion";
-import { useInView } from "react-intersection-observer";
+import { motion } from "framer-motion";
+// s
 
 export default function Hero(){
     // const { scrollYProgress } = useScroll();
@@ -33,10 +31,10 @@ export default function Hero(){
                  duration: 2
                 },
       }} >
-                <Grid container item sx={{display:'block'}} >
+                <Grid container item sx={{display:'block', padding:'1%'}} >
                     <Typography variant="h1" fontWeight={460} sx={{lineHeight:1, letterSpacing:7 }} ><span className="grey">WELCOME.</span> </Typography>
                     <Typography variant="h2" >to a <span className="">glimpse</span> of</Typography>
-                    <Typography variant="h2" >my <span className="blue"  style={{fontWeight: 50}}>sanity</span> and <span style={{fontWeight: 50, textDecoration:'line-through', color:'red' }}>insanity</span></Typography>
+                    <Typography variant="h3" >my <span className="blue"  style={{fontWeight: 50}}>sanity</span> and <span style={{fontWeight: 50, textDecoration:'line-through', color:'red' }}>insanity</span></Typography>
                 </Grid>
             </motion.div>
             </motion.div>

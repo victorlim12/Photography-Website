@@ -8,6 +8,7 @@ width: fit-content;
   height:fit-content;
   min-height: 40vh;
   max-Width:75vw;
+  min-height:${(props)=>props.height === undefined ? '40vh' : props.height};
   min-Width:${(props)=>props.min};
   /** Black color with opacity **/
   background-image:linear-gradient(${(props)=>props.direction}, ${(props)=>props.gradient}, rgba(255,255,255,0),  rgba(255, 102, 0, 0)),url(${(props) => props.Background});
@@ -36,10 +37,14 @@ width: fit-content;
   }
 `
 export const CardContent= styled.div`
-    padding:5%;
+    padding:3%;
     height:inherit;
+    min-Width:${(props)=>props.max};
+    max-Width:${(props)=>props.max};
+
     @media screen and (max-width: 768px) {
-    margin-top: 40%;
+    margin-top: ${(props) => props.margin === undefined ? '30%' : props.margin};
+    max-Width:80vw;
   }
 
 `
