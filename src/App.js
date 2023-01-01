@@ -1,4 +1,4 @@
-import Display from "./Components/Banner";
+import Display from "./Components/Introduction";
 import Hero from "./Components/Hero";
 import { ThemeProvider, createTheme, responsiveFontSizes } from '@mui/material/styles';
 import Introduction from "./Components/Introduction";
@@ -19,7 +19,6 @@ function App() {
     <ThemeProvider theme={theme}>
       <Hero/>
       <Introduction/>
-      <Display/>
     </ThemeProvider>
   );
 }

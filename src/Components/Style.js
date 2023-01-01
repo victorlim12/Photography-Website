@@ -1,8 +1,8 @@
 import { css } from 'styled-components'
 import styled from 'styled-components'
-import TEST from '../Images/foklore.png'
+import { motion } from "framer-motion";
 
-export const Card= styled.div`
+export const Card= styled(motion.div)`
 width: fit-content; 
   /** Sizeable height for the form **/
   height:fit-content;
@@ -26,10 +26,9 @@ width: fit-content;
   margin: 1%; */
 
 
-
   @media screen and (max-width: 912px) {
     background-image:linear-gradient(${(props)=>props.direction2}, rgba(0, 0, 0, 0.6), rgba(0,0,0,0.2),  rgba(255, 102, 0, 0)),url(${(props) => props.Background});
-    min-height:32vh;
+    min-height:35vh;
     min-width: ${(props)=>props.resize};
     max-width: ${(props)=>props.resize};
   }

@@ -1,9 +1,7 @@
 import React from "react";
-import { motion } from "framer-motion";
 
 //own utils
 import {Card, CardContent} from './Style'
-import Cards from "./Card";
 
 //MUI components
 import { Grid, Typography} from "@mui/material";
@@ -14,21 +12,23 @@ import '../Utils/Gradient.css'
 
 //images (can consider CDN)
 import TEST from '../Images/ObjectWeb.png'
-import TEST4 from '../Images/road_C.jpeg'
-import TEST5 from '../Images/bg2_C.jpeg'
-import TEST6 from '../Images/RED_C.jpeg'
+import TEST4 from '../Images/road.jpg'
+import TEST5 from '../Images/bg2.jpg'
+import TEST6 from '../Images/RED.jpg'
 
 export default function Introduction(){
+
+  
+    // const { scrollYProgress } = useScroll();
+    // const scale = useTransform(scrollYProgress, [0, 0.5], [0, 1]);
     const color='rgba(0,0,0,1)'
     // const color1 ='rgba(0,0,0,0.8)'
     return(
-        <div 
-        className={'normal'} style={{
+        <div className={'normal'} style={{
         transition: "all .5s ease",
         WebkitTransition: "all 1s ease",
         MozTransition: "all 1s ease", width: '100vw', flexDirection:'row', display:"inline-block", justifyContent:'center', overflow:'hidden'
         }}>
-        <motion.div>
           <Grid container sx={{justifyContent:'center', mt:'1%', height:'100%'}}>
           <CardContent max={'75vw'} margin={'5%'} style={{alignItems:'center'}}>
           <Typography variant="h4" fontWeight={600} align='center' sx={{marginBottom:'2%'}}><span className="grey"></span></Typography>
@@ -39,33 +39,31 @@ export default function Introduction(){
                     this website is mainly for <span className="blue" style={{fontWeight: '500'}}>media-related</span> work.</span>
             </Typography>
             </CardContent>
-            <Cards
-            Background={TEST5} direction={'to bottom'} direction2={'to bottom'} gradient={color} min={'98vw'} resize={'90vw'} style={{justifySelf:'center'}}>
+
+            <Card Background={TEST5} direction={'to bottom'} direction2={'to bottom'} gradient={color} min={'98vw'} resize={'90vw'} style={{justifySelf:'center'}}>
             <CardContent>
                   <Typography variant="h3" fontWeight={500} align="center"><span className="grey">Afloat.</span></Typography>
                   <Typography variant="h5" fontWeight={500} align="center">stay afloat. head above water. </Typography>
                   <Typography variant="h6" fontWeight={500} align="center"></Typography>
             </CardContent>
-          </Cards>
-          <Cards
-          Background={TEST6} direction={'to top'} direction2={'to bottom'} gradient={color} min={'49vw'} resize={'45vw'} style={{justifySelf:'center'}}>
+          </Card>
+          <Card Background={TEST6} direction={'to top'} direction2={'to bottom'} gradient={color} min={'49vw'} resize={'45vw'} style={{justifySelf:'center'}}>
             <CardContent style={{alignItems:'center'}}>
                   <Typography variant="h3" fontWeight={500} align='center'> <span className="crimson">Passion.</span> </Typography>
                   <Typography variant="h6" fontWeight={500} align='center'>scarlet. burgundy. maroon.</Typography>
             </CardContent>
-          </Cards>
-          <Cards
-          Background={TEST4} direction={'to top'} direction2={'to bottom'} gradient={color} min={'49vw'} resize={'45vw'} style={{justifySelf:'center'}}>
+          </Card>
+          <Card Background={TEST4} direction={'to top'} direction2={'to bottom'} gradient={color} min={'49vw'} resize={'45vw'} style={{justifySelf:'center'}}>
             <CardContent style={{alignItems:'center'}}>
                   <Typography variant="h3" fontWeight={500} align='center'><span className="green">Rejuvenate.</span></Typography>
                   <Typography variant="h6" fontWeight={400} align='center'>and no regret or whatsoever</Typography>
             </CardContent>
-          </Cards>   
+          </Card>   
           {/* <Card Background={TEST2} direction={'to bottom'} direction2={'to top'} gradient={color} min={'98vw'} resize={'45vw'} style={{justifySelf:'center'}}> */}
-          <Cards min={'95vw'} height={'60vh'} style={{flexDirection:'row', flexWrap: 'wrap'}}>
+          <Card min={'95vw'} height={'60vh'} style={{flexDirection:'row', flexWrap: 'wrap'}}>
           <CardContent margin={'5%'} max={'55vw'} style={{alignItems:'center'}}>
                   <br/>
-                  <Typography variant="h3" fontWeight={500} align='center' sx={{textTransform: 'uppercase', letterSpacing: 8}}><span className="blue" >
+                  <Typography variant="h3" fontWeight={600} align='center' sx={{textTransform: 'uppercase', letterSpacing: 8}}><span className="blue" >
                Photography.</span>
             </Typography>
             <br/>
@@ -74,12 +72,9 @@ export default function Introduction(){
                     Staying afloat for one more time.  </span><br/>
             </Typography>
             </CardContent>
-            <Cards Background={TEST} direction={'to top'} direction2={'to bottom'} min={'50vw'} height={'55vh'} resize={'95vw'} 
-            style={{justifySelf:'center', 
-            backgroundImage:`linear-gradient(to bottom , rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0),rgba(0,0,0,0.8)), url(${TEST})`}}></Cards>
-            </Cards>
+            <Card Background={TEST} direction={'to top'} direction2={'to bottom'} min={'50vw'} height={'55vh'} resize={'95vw'} style={{justifySelf:'center', backgroundImage:`linear-gradient(to bottom , rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0),rgba(0,0,0,0.8)), url(${TEST})`}}></Card>
+            </Card>
           </Grid>
-          </motion.div>
         </div>
     
     )
