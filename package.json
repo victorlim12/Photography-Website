@@ -2,6 +2,7 @@
   "name": "portfolio-web",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://victorlim12.github.io/Portfolio-Website/",
   "dependencies": {
     "@emotion/react": "^11.10.5",
     "@emotion/styled": "^11.10.5",
