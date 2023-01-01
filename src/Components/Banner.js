@@ -56,7 +56,7 @@ const Display = () => {
   
     return (
       <Grid container>
-      <div className={'image-bg'} style={{
+      <div className={''} style={{
       transition: "all .5s ease",
       WebkitTransition: "all 1s ease",
       MozTransition: "all 1s ease", width: '100vw'

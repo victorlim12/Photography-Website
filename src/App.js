@@ -19,6 +19,7 @@ function App() {
     <ThemeProvider theme={theme}>
       <Hero/>
       <Introduction/>
+      <Display/>
     </ThemeProvider>
   );
 }

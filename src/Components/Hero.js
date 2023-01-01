@@ -5,11 +5,11 @@ import '../App.css';
 import '../Utils/Gradient.css'
 
 //MUI components
-import { Grid, Typography, Button} from "@mui/material";
+import { Grid, Typography} from "@mui/material";
 
 //import { motion, useAnimation } from "framer-motion";
 import { motion } from "framer-motion";
-// s
+
 
 export default function Hero(){
     // const { scrollYProgress } = useScroll();
