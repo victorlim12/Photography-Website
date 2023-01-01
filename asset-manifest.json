@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/static/css/main.4056a6b5.css",
-    "main.js": "/static/js/main.7bbb91d4.js",
-    "static/js/787.a8a21f2e.chunk.js": "/static/js/787.a8a21f2e.chunk.js",
-    "static/media/int2.png": "/static/media/int2.08e95365ed4f41faefba.png",
-    "static/media/ObjectWeb.png": "/static/media/ObjectWeb.9596af72021eebdec2dd.png",
-    "static/media/RED_C.jpeg": "/static/media/RED_C.91c64d2b863399c36cc3.jpeg",
-    "static/media/bg2_C.jpeg": "/static/media/bg2_C.9871ca943951a1090d2e.jpeg",
-    "static/media/road_C.jpeg": "/static/media/road_C.88fa6ecfc489fa347fd6.jpeg",
-    "index.html": "/index.html",
-    "main.4056a6b5.css.map": "/static/css/main.4056a6b5.css.map",
-    "main.7bbb91d4.js.map": "/static/js/main.7bbb91d4.js.map",
-    "787.a8a21f2e.chunk.js.map": "/static/js/787.a8a21f2e.chunk.js.map"
+    "main.css": "/Portfolio-Website/static/css/main.bb01bfd2.css",
+    "main.js": "/Portfolio-Website/static/js/main.a63f9254.js",
+    "static/js/787.a8a21f2e.chunk.js": "/Portfolio-Website/static/js/787.a8a21f2e.chunk.js",
+    "static/media/int2.png": "/Portfolio-Website/static/media/int2.08e95365ed4f41faefba.png",
+    "static/media/ObjectWeb.png": "/Portfolio-Website/static/media/ObjectWeb.9596af72021eebdec2dd.png",
+    "static/media/RED_C.jpeg": "/Portfolio-Website/static/media/RED_C.91c64d2b863399c36cc3.jpeg",
+    "static/media/bg2_C.jpeg": "/Portfolio-Website/static/media/bg2_C.9871ca943951a1090d2e.jpeg",
+    "static/media/road_C.jpeg": "/Portfolio-Website/static/media/road_C.88fa6ecfc489fa347fd6.jpeg",
+    "index.html": "/Portfolio-Website/index.html",
+    "main.bb01bfd2.css.map": "/Portfolio-Website/static/css/main.bb01bfd2.css.map",
+    "main.a63f9254.js.map": "/Portfolio-Website/static/js/main.a63f9254.js.map",
+    "787.a8a21f2e.chunk.js.map": "/Portfolio-Website/static/js/787.a8a21f2e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4056a6b5.css",
-    "static/js/main.7bbb91d4.js"
+    "static/css/main.bb01bfd2.css",
+    "static/js/main.a63f9254.js"
   ]
 }
