@@ -26,54 +26,41 @@ export default function Introduction(){
         className={'normal'} style={{
         transition: "all .5s ease",
         WebkitTransition: "all 1s ease",
-        MozTransition: "all 1s ease", width: '100vw', flexDirection:'row', display:"inline-block", justifyContent:'center', overflow:'hidden'
+        MozTransition: "all 1s ease", width: '100vw', flexDirection:'row', justifyContent:'center', overflow:'hidden'
         }}>
         <motion.div>
           <Grid container sx={{justifyContent:'center', mt:'1%', height:'100%'}}>
-          <CardContent max={'75vw'} margin={'5%'} style={{alignItems:'center'}}>
+          <CardContent max={'75vw'} margin={'5%'} style={{alignItems:'center', justifySelf:'center'}}>
           <Typography variant="h4" fontWeight={600} align='center' sx={{marginBottom:'2%'}}><span className="grey"></span></Typography>
-                  <Typography variant="h5" fontWeight={400} align='center'><span className="grey" >
+                  <Typography variant="h6" fontWeight={400} align='center'><span className="grey" >
                     I am <span className="blue" style={{fontWeight: '500'}}>Victor</span>. 
                     A passionate <span className="blue" style={{fontWeight: '500'}}>photographer</span>. 
-                    Aspiring Interface <span className="blue" style={{fontWeight: '500'}}>Developer</span>. <br/>
+                    Aspiring Interface <span className="blue" style={{fontWeight: '500'}}>Developer</span>.
                     this website is mainly for <span className="blue" style={{fontWeight: '500'}}>media-related</span> work.</span>
             </Typography>
             </CardContent>
             <Cards
-            Background={TEST5} direction={'to bottom'} direction2={'to bottom'} gradient={color} min={'98vw'} resize={'90vw'} style={{justifySelf:'center'}}>
-            <CardContent>
-                  <Typography variant="h3" fontWeight={500} align="center"><span className="grey">Afloat.</span></Typography>
+            Background={TEST5} direction={'to bottom'} direction2={'to bottom'} gradient={color} min={'90vw'} resize={'95vw'} style={{justifySelf:'center'}}>
+            <CardContent max={'90vw'} margin={'5%'} style={{alignItems:'center', justifyContent:'center'}}>
+                  <Typography variant="h1" fontWeight={500} align="center"><span className="grey">Afloat.</span></Typography>
                   <Typography variant="h5" fontWeight={500} align="center">stay afloat. head above water. </Typography>
-                  <Typography variant="h6" fontWeight={500} align="center"></Typography>
             </CardContent>
           </Cards>
-          {/* <Cards
-          Background={TEST6} direction={'to top'} direction2={'to bottom'} gradient={color} min={'49vw'} resize={'45vw'} style={{justifySelf:'center'}}>
-            <CardContent style={{alignItems:'center'}}>
-                  <Typography variant="h3" fontWeight={500} align='center'> <span className="crimson">Passion.</span> </Typography>
-                  <Typography variant="h6" fontWeight={500} align='center'>scarlet. burgundy. maroon.</Typography>
-            </CardContent>
-          </Cards>
-          <Cards
-          Background={TEST4} direction={'to top'} direction2={'to bottom'} gradient={color} min={'49vw'} resize={'45vw'} style={{justifySelf:'center'}}>
-            <CardContent style={{alignItems:'center'}}>
-                  <Typography variant="h3" fontWeight={500} align='center'><span className="green">Rejuvenate.</span></Typography>
-                  <Typography variant="h6" fontWeight={400} align='center'>and no regret or whatsoever</Typography>
-            </CardContent>
-          </Cards>    */}
-          <Cards min={'95vw'} height={'60vh'} resize={'90vw'} style={{flexDirection:'row', flexWrap: 'wrap'}}>
-          <CardContent margin={'5%'} max={'55vw'} style={{alignItems:'center'}}>
+          <Cards min={'95vw'} height={'100vh'} hr={'100vh'} style={{flexDirection:'row', flexWrap: 'wrap'}}>
+          <CardContent margin={'5%'} max={'55vw'} style={{alignItems:'left'}}>
                   <br/>
-                  <Typography variant="h2" fontWeight={500} align='center' sx={{textTransform: 'uppercase', letterSpacing: 8}}><span className="blue" >
-               Photography.</span>
+                  <Typography variant="h1" fontWeight={500} align='left' sx={{textTransform: 'uppercase',}}><span className="blue" >
+               Photo</span>
+            </Typography>
+            <Typography variant="h1" fontWeight={500} align='left' sx={{textTransform: 'uppercase',lineHeight:0.6}}><span className="blue" >
+               Graphy</span>
             </Typography>
             <br/>
-            <Typography variant="h6" fontWeight={500} align='center' style={{lineHeight:1.4}}><span className="grey" >
-                    Personally, it is a nature by-product of observation on life. how moods are portrayed and conveyed. how certain scenes are reimagined. how memories are kept. how feelings are blabbed out with colors. Those feelings sustained me this far.
-                    Staying afloat for one more time.  </span><br/>
+            <Typography variant="body1" fontWeight={500} align='left' style={{lineHeight:1.4,  fontSize:'1.1rem'}}><span className="grey" >
+                    Personally, it is a nature by-product of observation on life. how moods are portrayed and conveyed. how certain scenes are reimagined. how memories are kept.  </span><br/>
             </Typography>
             </CardContent>
-            <Cards Background={TEST} direction={'to top'} direction2={'to bottom'} min={'50vw'} height={'55vh'} resize={'95vw'} 
+            <Cards Background={TEST} direction={'to top'} direction2={'to bottom'} min={'50vw'} height={'60vh'} resize={'95vw'} hr={'52vh'}
             style={{justifySelf:'center', 
             backgroundImage:`linear-gradient(to bottom , rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0),rgba(0,0,0,0.8)), url(${TEST})`}}></Cards>
             </Cards>

@@ -26,8 +26,8 @@ export default function Gallery() {
       WebkitTransition: "all 1s ease",
       MozTransition: "all 1s ease", width: '100vw', flexDirection:'row', justifyContent:'center', overflow:'hidden'
       }}>
-    <Box sx={{ minWidth: '60vw', maxWidth:'80vw', minHeight: '80vh', alignItems:'center', justifyContent:'center'}}>
-      <Masonry columns={3} spacing={2}>
+    <Box sx={{ minWidth: '92vw', maxWidth:'90vw', minHeight: '80vh', alignItems:'center', justifyContent:'center'}}>
+      <Masonry spacing={2} columns={{ xs: 2, sm: 2, md: 3 }}>
         {itemData.map((item, index) => (
           <div key={index}>
             <motion.img
