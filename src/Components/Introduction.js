@@ -47,7 +47,7 @@ export default function Introduction(){
                   <Typography variant="h6" fontWeight={500} align="center"></Typography>
             </CardContent>
           </Cards>
-          <Cards
+          {/* <Cards
           Background={TEST6} direction={'to top'} direction2={'to bottom'} gradient={color} min={'49vw'} resize={'45vw'} style={{justifySelf:'center'}}>
             <CardContent style={{alignItems:'center'}}>
                   <Typography variant="h3" fontWeight={500} align='center'> <span className="crimson">Passion.</span> </Typography>
@@ -60,9 +60,8 @@ export default function Introduction(){
                   <Typography variant="h3" fontWeight={500} align='center'><span className="green">Rejuvenate.</span></Typography>
                   <Typography variant="h6" fontWeight={400} align='center'>and no regret or whatsoever</Typography>
             </CardContent>
-          </Cards>   
-          {/* <Card Background={TEST2} direction={'to bottom'} direction2={'to top'} gradient={color} min={'98vw'} resize={'45vw'} style={{justifySelf:'center'}}> */}
-          <Cards min={'95vw'} height={'60vh'} style={{flexDirection:'row', flexWrap: 'wrap'}}>
+          </Cards>    */}
+          <Cards min={'95vw'} height={'60vh'} resize={'90vw'} style={{flexDirection:'row', flexWrap: 'wrap'}}>
           <CardContent margin={'5%'} max={'55vw'} style={{alignItems:'center'}}>
                   <br/>
                   <Typography variant="h2" fontWeight={500} align='center' sx={{textTransform: 'uppercase', letterSpacing: 8}}><span className="blue" >
