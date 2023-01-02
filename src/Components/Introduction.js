@@ -14,13 +14,12 @@ import '../Utils/Gradient.css'
 
 //images (can consider CDN)
 import TEST from '../Images/ObjectWeb.png'
-import TEST4 from '../Images/road_C.jpeg'
 import TEST5 from '../Images/bg2_C.jpeg'
-import TEST6 from '../Images/RED_C.jpeg'
 
 export default function Introduction(){
     const color='rgba(0,0,0,1)'
     // const color1 ='rgba(0,0,0,0.8)'
+    
     return(
         <div 
         className={'normal'} style={{
@@ -41,7 +40,7 @@ export default function Introduction(){
             </CardContent>
             <Cards
             Background={TEST5} direction={'to bottom'} direction2={'to bottom'} gradient={color} min={'90vw'} resize={'95vw'} style={{justifySelf:'center'}}>
-            <CardContent max={'90vw'} margin={'5%'} style={{alignItems:'center', justifyContent:'center'}}>
+            <CardContent max={'90vw'} margin={'1%'} style={{alignItems:'center', justifyContent:'center'}}>
                   <Typography variant="h1" fontWeight={500} align="center"><span className="grey">Afloat.</span></Typography>
                   <Typography variant="h5" fontWeight={500} align="center">stay afloat. head above water. </Typography>
             </CardContent>

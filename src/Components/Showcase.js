@@ -1,9 +1,7 @@
 import React from "react";
-import { motion } from "framer-motion";
 
 //own utils
-import {CardContent, Card} from './Style'
-import Cards from "./Card";
+import {CardContent} from './Style'
 
 //MUI components
 import { Grid, Typography} from "@mui/material";
@@ -13,29 +11,26 @@ import Gallery from "./Gallery";
 import '../App.css';
 import '../Utils/Gradient.css'
 
-//images (can consider CDN)
-import TEST5 from '../Images/Hive_C.jpeg'
-import TEST4 from '../Images/Cam_C.png'
-import TEST6 from '../Images/bnw_C.jpeg'
-
 export default function Showcase(){
-    const color='rgba(0,0,0,1)'
+    // const color='rgba(0,0,0,1)'
     // const color1 ='rgba(0,0,0,0.8)'
     return(
         <div 
-        className={'normal'} style={{
+        className={'notnormal'} style={{
         transition: "all .5s ease",
         WebkitTransition: "all 1s ease",
-        MozTransition: "all 1s ease", width: '100vw', flexDirection:'row', justifyContent:'center', overflow:'hidden'
+        MozTransition: "all 1s ease", width: '100vw',height:'100vh' ,flexDirection:'row', overflow:'hidden'
         }}>
-        <Grid container sx={{justifyContent:'center', mt:'5%', height:'100%'}}>
-        <CardContent max={'75vw'} margin={'5%'} style={{alignItems:'center', justifySelf:'center'}}>
-          <Typography variant="h1" fontWeight={500} align='center' sx={{marginBottom:'2%'}}><span className="grey"></span>WORKS</Typography>
+        <Grid container sx={{justifyContent:'center'}}>
+        <CardContent>
+          <Typography variant="h1" fontWeight={500} align='center' sx={{marginBottom:'-2%'}}><span className="grey"></span>WORKS</Typography>
                   <Typography variant="h6" fontWeight={400} align='center'>
                     this is what I have so far.
                 </Typography>
             </CardContent>
-          <Gallery/>
+        <div style={{overflow: 'scroll', height:'80vh'}}>
+        <Gallery/>
+        </div>
         </Grid>
         </div>
     

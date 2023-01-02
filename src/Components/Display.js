@@ -7,8 +7,6 @@ import Cards from "./Card";
 
 //MUI components
 import { Grid, Typography} from "@mui/material";
-import Gallery from "./Gallery";
-
 //css from App (need to rewrite)
 import '../App.css';
 import '../Utils/Gradient.css'
@@ -29,14 +27,14 @@ export default function Display(){
         }}>
         <Grid container sx={{justifyContent:'center', mt:'5%', height:'100%'}}>
             <Cards Background={TEST4} hr={'50vh'}
-           direction={'to top'} direction2={'to bottom'} gradient={color} min={'90vw'} height={'60vh'} resize={'90vw'} style={{ 
+           direction={'to top'} direction2={'to bottom'} gradient={color} min={'90vw'} height={'45vh'} resize={'90vw'} style={{ 
             borderRadius:'0.5em', backgroundSize:'cover', backgroundRepeat: 'no-repeat'}}>
             <CardContent style={{alignItems:'center',padding:'5%'}} >
             <Typography variant="h1" fontWeight={600} align='left' sx={{textTransform: 'uppercase', letterSpacing: 8}}>
                 <span className="yellow" style={{color:'yellow'}}>Nikon Z5</span>
             </Typography>
-            <Typography variant="h5" fontWeight={500} align='left' sx={{letterSpacing: 5}}>
-                <span className="grey">My beloved Camera.</span>
+            <Typography variant="h5" fontWeight={600} align='left' sx={{letterSpacing: 5}}>
+                <span className="grey">24 -70 F4S  |  50mm F1.8G  |  85mm f1.8 </span>
             </Typography>
             </CardContent>
           </Cards>
@@ -48,10 +46,10 @@ export default function Display(){
                 transition={{
                 backdropFilter: { duration: 1.6 }}}
                 initial={{ backdropFilter: '0px' }} style={{alignItems:'center', display:'flex',
-                height:'100%', justifyContent:'center', borderRadius:'0.5em', paddingTop:'10%', paddingBottom:'10%',
+                height:'100%', justifyContent:'center', borderRadius:'0.5em', paddingTop:'8%', paddingBottom:'8%',
                 backgroundImage:`linear-gradient(to top , rgba(0, 0, 0, 1), rgba(0, 87, 51, 0),rgba(0,0,0,1))`}}>
             <CardContent>
-            <Typography variant="h6" fontWeight={600} align='left' sx={{textTransform: 'uppercase', letterSpacing: 8}}>
+            <Typography variant="h4" fontWeight={500} align='left' sx={{textTransform: 'uppercase', letterSpacing: 8}}>
                 <span className="red">Focus on this</span>
             </Typography>
             <Typography variant="h1" fontWeight={600} align='left' sx={{textTransform: 'uppercase', letterSpacing: 8}}>

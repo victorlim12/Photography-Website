@@ -1,33 +1,31 @@
 import * as React from 'react';
 import Box from '@mui/material/Box';
-import Paper from '@mui/material/Paper';
 import Masonry from '@mui/lab/Masonry';
-import { styled } from '@mui/material/styles';
 
 import { motion } from "framer-motion";
 
 import '../App.css';
 import '../Utils/Gradient.css'
 
-const Label = styled(Paper)(({ theme }) => ({
-  backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
-  ...theme.typography.body2,
-  padding: theme.spacing(0.5),
-  textAlign: 'center',
-  color: theme.palette.text.secondary,
-  borderBottomLeftRadius: 0,
-  borderBottomRightRadius: 0,
-}));
+// const Label = styled(Paper)(({ theme }) => ({
+//   backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
+//   ...theme.typography.body2,
+//   padding: theme.spacing(0.5),
+//   textAlign: 'center',
+//   color: theme.palette.text.secondary,
+//   borderBottomLeftRadius: 0,
+//   borderBottomRightRadius: 0,
+// }));
 
 export default function Gallery() {
   return (
     <div className={'normal'} style={{
       transition: "all .5s ease",
       WebkitTransition: "all 1s ease",
-      MozTransition: "all 1s ease", width: '100vw', flexDirection:'row', justifyContent:'center', overflow:'hidden'
+      MozTransition: "all 1s ease", width: '100vw', flexDirection:'row', justifyContent:'center', overflow:'scroll'
       }}>
-    <Box sx={{ minWidth: '92vw', maxWidth:'90vw', minHeight: '80vh', alignItems:'center', justifyContent:'center'}}>
-      <Masonry spacing={2} columns={{ xs: 2, sm: 2, md: 3 }}>
+    <Box sx={{ minWidth: '90vw', maxWidth:'95vw', alignItems:'center', justifyContent:'center'}}>
+      <Masonry spacing={2} columns={{ xs: 2, sm: 2, md: 3 }} sx={{m:'0%'}}>
         {itemData.map((item, index) => (
           <div key={index}>
             <motion.img
