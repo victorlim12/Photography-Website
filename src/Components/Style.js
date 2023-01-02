@@ -1,4 +1,4 @@
-import { css } from 'styled-components'
+// import { css } from 'styled-components'
 import styled from 'styled-components'
 import { motion } from "framer-motion";
 
@@ -13,7 +13,6 @@ width: fit-content;
   background-image:linear-gradient(${(props)=>props.direction}, ${(props)=>props.gradient}, rgba(255,255,255,0),  rgba(255, 102, 0, 0)),url(${(props) => props.Background});
   background-size: cover;
   background-position: center;
-  backdrop-filter:blur(10px);
   /* box-shadow: 0px 0px 30px ${(props) => props.Color}; */
   /** Responsive layout **/
   display:flex;
@@ -28,7 +27,7 @@ width: fit-content;
 
   @media screen and (max-width: 912px) {
     background-image:linear-gradient(${(props)=>props.direction2}, rgba(0, 0, 0, 0.6), rgba(0,0,0,0.2),  rgba(255, 102, 0, 0)),url(${(props) => props.Background});
-    min-height:35vh;
+    min-height:${(props) => props.hr === undefined ? '35vh' : props.hr};
     min-width: ${(props)=>props.resize};
     max-width: ${(props)=>props.resize};
   }

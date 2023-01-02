@@ -13,7 +13,7 @@ const Cards = (props) => {
   }}
   initial={{ opacity: 0 }}
   Background={props.Background} direction={props.direction} direction2={props.direction2} gradient={props.gradient} min={props.min} resize={props.resize}
-  height={props.height} style={props.style}>
+  height={props.height} style={props.style} hr={props.hr}>
       {props.children}
     </Card>
     </div>

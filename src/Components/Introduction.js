@@ -2,7 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 
 //own utils
-import {Card, CardContent} from './Style'
+import {CardContent} from './Style'
 import Cards from "./Card";
 
 //MUI components
@@ -65,7 +65,7 @@ export default function Introduction(){
           <Cards min={'95vw'} height={'60vh'} style={{flexDirection:'row', flexWrap: 'wrap'}}>
           <CardContent margin={'5%'} max={'55vw'} style={{alignItems:'center'}}>
                   <br/>
-                  <Typography variant="h3" fontWeight={500} align='center' sx={{textTransform: 'uppercase', letterSpacing: 8}}><span className="blue" >
+                  <Typography variant="h2" fontWeight={500} align='center' sx={{textTransform: 'uppercase', letterSpacing: 8}}><span className="blue" >
                Photography.</span>
             </Typography>
             <br/>
