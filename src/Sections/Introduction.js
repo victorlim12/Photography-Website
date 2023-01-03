@@ -2,8 +2,8 @@ import React from "react";
 import { motion } from "framer-motion";
 
 //own utils
-import {CardContent} from './Style'
-import Cards from "./Card";
+import {CardContent} from '../Components/Style'
+import Cards from "../Components/Cards";
 
 //MUI components
 import { Grid, Typography} from "@mui/material";

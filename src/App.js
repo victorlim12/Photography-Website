@@ -1,8 +1,8 @@
-import Display from "./Components/Display";
-import Hero from "./Components/Hero";
+import Display from "./Sections/Display";
+import Hero from "./Sections/Hero";
 import { ThemeProvider, createTheme, responsiveFontSizes } from '@mui/material/styles';
-import Introduction from "./Components/Introduction";
-import Showcase from "./Components/Showcase";
+import Introduction from "./Sections/Introduction";
+import Showcase from "./Sections/Showcase";
 
 
 let theme = createTheme({

@@ -1,11 +1,11 @@
 import React from "react";
 
 //own utils
-import {CardContent} from './Style'
+import {CardContent} from '../Components/Style'
 
 //MUI components
 import { Grid, Typography} from "@mui/material";
-import Gallery from "./Gallery";
+import Gallery from "../Components/Gallery";
 
 //css from App (need to rewrite)
 import '../App.css';
@@ -30,7 +30,7 @@ export default function Showcase(){
                     this is what I have so far.
                 </Typography>
             </CardContent>
-        <div style={{overflow: 'scroll', height:'80vh', backgroundImage:`linear-gradient(to top , ${colors},rgba(0,0,0,1))`,transition: "all .5s ease",
+        <div style={{overflow: 'scroll', height:'75vh', backgroundImage:`linear-gradient(to top , ${colors},rgba(0,0,0,1))`,transition: "all .5s ease",
             WebkitTransition: "all .5s ease",
             MozTransition: "all .5s ease"}}>
         <Gallery colors={colors} setColor={setColor} Noice={rightshade}/>
