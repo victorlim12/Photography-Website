@@ -3,6 +3,7 @@ import Hero from "./Sections/Hero";
 import { ThemeProvider, createTheme, responsiveFontSizes } from '@mui/material/styles';
 import Introduction from "./Sections/Introduction";
 import Showcase from "./Sections/Showcase";
+import Hobbies from "./Sections/Hobbies";
 
 
 let theme = createTheme({
@@ -23,6 +24,7 @@ function App() {
       <Introduction/>
       <Display/>
       <Showcase/>
+      <Hobbies/>
       </div>
     </ThemeProvider>
   );

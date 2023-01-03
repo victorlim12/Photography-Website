@@ -30,7 +30,7 @@ export default function Showcase(){
                     this is what I have so far.
                 </Typography>
             </CardContent>
-        <div style={{overflow: 'scroll', height:'75vh', backgroundImage:`linear-gradient(to top , ${colors},rgba(0,0,0,1))`,transition: "all .5s ease",
+        <div style={{overflow: 'scroll', height:'75vh',paddingBottom:'3%', backgroundImage:`linear-gradient(to top ,rgba(0,0,0,1), ${colors},rgba(0,0,0,1))`,transition: "all .5s ease",
             WebkitTransition: "all .5s ease",
             MozTransition: "all .5s ease"}}>
         <Gallery colors={colors} setColor={setColor} Noice={rightshade}/>

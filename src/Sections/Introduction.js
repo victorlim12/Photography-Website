@@ -33,7 +33,7 @@ export default function Introduction(){
           <Typography variant="h4" fontWeight={600} align='center' sx={{marginBottom:'2%'}}><span className="grey"></span></Typography>
                   <Typography variant="h6" fontWeight={400} align='center'><span className="grey" >
                     I am <span className="blue" style={{fontWeight: '500'}}>Victor</span>. 
-                    A passionate <span className="blue" style={{fontWeight: '500'}}>photographer</span>. 
+                    A passionate <span className="blue" style={{fontWeight: '500'}}>photographer</span>. <br/>
                     Aspiring Interface <span className="blue" style={{fontWeight: '500'}}>Developer</span>.
                     this website is mainly for <span className="blue" style={{fontWeight: '500'}}>media-related</span> work.</span>
             </Typography>
