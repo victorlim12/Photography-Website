@@ -41,7 +41,7 @@ export default function Introduction(){
             <Cards
             Background={TEST5} direction={'to bottom'} direction2={'to bottom'} gradient={color} min={'90vw'} resize={'95vw'} style={{justifySelf:'center'}}>
             <CardContent max={'90vw'} margin={'1%'} style={{alignItems:'center', justifyContent:'center'}}>
-                  <Typography variant="h1" fontWeight={500} align="center"><span className="grey">Afloat.</span></Typography>
+                  <Typography variant="h1" fontWeight={600} align="center"><span className="grey">Afloat.</span></Typography>
                   <Typography variant="h5" fontWeight={500} align="center">stay afloat. head above water. </Typography>
             </CardContent>
           </Cards>
@@ -52,7 +52,7 @@ export default function Introduction(){
                Photo</span>
             </Typography>
             <Typography variant="h1" fontWeight={500} align='left' sx={{textTransform: 'uppercase',lineHeight:0.6}}><span className="blue" >
-               Graphy</span>
+               Graphy.</span>
             </Typography>
             <br/>
             <Typography variant="body1" fontWeight={500} align='left' style={{lineHeight:1.4,  fontSize:'1.1rem'}}><span className="grey" >
@@ -66,6 +66,5 @@ export default function Introduction(){
           </Grid>
           </motion.div>
         </div>
-    
     )
 }

@@ -25,7 +25,7 @@ export default function Showcase(){
         }}>
         <Grid container sx={{justifyContent:'center'}}>
         <CardContent>
-          <Typography variant="h1" fontWeight={500} align='center' sx={{marginBottom:'-2%'}}><span className="grey"></span>WORKS</Typography>
+          <Typography variant="h1" fontWeight={600} align='center' sx={{marginBottom:'-2%'}}><span className="grey"></span>WORKS</Typography>
                   <Typography variant="h6" fontWeight={400} align='center'>
                     this is what I have so far.
                 </Typography>

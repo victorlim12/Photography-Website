@@ -13,7 +13,7 @@ width: fit-content;
   background-image:linear-gradient(${(props)=>props.direction}, ${(props)=>props.gradient}, rgba(255,255,255,0),  rgba(255, 102, 0, 0)),url(${(props) => props.Background});
   background-size: cover;
   background-position: center;
-  /* box-shadow: 0px 0px 30px ${(props) => props.Color}; */
+  /* box-shadow: 0px 0px 1px ${(props) => props.color}; */
   /** Responsive layout **/
   display:flex;
   /** One element on top of the other **/
@@ -46,4 +46,19 @@ export const CardContent= styled.div`
 
 `
 
+export const HeroVideo = styled.video`
+  z-index: 0;
+  position: absolute;
+  width:100%;
+  height:100%;
+	right: 0;
+	bottom: 0;
+  object-fit: cover;
+
+	&.fade-in-image { animation: fadeIn 3s; }
+	@keyframes fadeIn {
+		0% { opacity: 0; }
+		100% { opacity: 1; }
+	  }
+`
  // background-image:linear-gradient(to right, rgba(0, 0, 0, 1), rgba(255,255,255,0),  rgba(255, 102, 0, 0)),url(${(props) => props.Background});

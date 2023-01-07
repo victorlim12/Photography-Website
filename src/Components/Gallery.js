@@ -17,7 +17,7 @@ export default function Gallery({colors, setColor, Noice, setActive}) {
       WebkitTransition: "all 1s ease",
       MozTransition: "all 1s ease", width: '100vw', flexDirection:'row', justifyContent:'center', overflow:'scroll'
       }}>
-    <Box sx={{ minWidth: '85vw', maxWidth:'95vw', alignItems:'center', justifyContent:'center'}}>
+    <Box sx={{ minWidth: '75vw', maxWidth:'95vw', alignItems:'center', justifyContent:'center'}}>
       <Masonry spacing={2} columns={{ xs: 2, sm: 2, md: 3 }} sx={{m:'0%'}}>
         {green.map((item, index) => (
           <div key={index}>

@@ -30,13 +30,13 @@ export default function Display(){
            direction={'to top'} direction2={'to bottom'} gradient={color} min={'90vw'} height={'45vh'} resize={'90vw'} style={{ 
             borderRadius:'0.5em', backgroundSize:'cover', backgroundRepeat: 'no-repeat'}}>
             <CardContent style={{alignItems:'center',padding:'5%'}} >
-            <Typography variant="h5" fontWeight={600} align='left' sx={{letterSpacing: 5, textTransform:'uppercase'}}>
+            <Typography variant="h5" fontWeight={500} align='left' sx={{letterSpacing: 5, textTransform:'uppercase'}}>
                 <span className="grey">Gears</span>
             </Typography>
-            <Typography variant="h1" fontWeight={600} align='left' sx={{textTransform: 'uppercase', letterSpacing: 8}}>
+            <Typography variant="h1" fontWeight={500} align='left' sx={{textTransform: 'uppercase', letterSpacing: 8}}>
                 <span className="yellow" style={{color:'yellow'}}>Nikon Z5</span>
             </Typography>
-            <Typography variant="h5" fontWeight={600} align='left' sx={{letterSpacing: 5}}>
+            <Typography variant="h5" fontWeight={500} align='left' sx={{letterSpacing: 5}}>
                 <span className="blue">24 -70 F4S  |  50mm F1.8G  |  85mm f1.8 </span>
             </Typography>
             </CardContent>

@@ -11,7 +11,7 @@ let theme = createTheme({
     mode: 'light',
   },
   typography: {
-    fontFamily: 'Helvetica Neue'
+    fontFamily: 'Helvetica Neue, Roboto'
   },
 });
 theme = responsiveFontSizes(theme);

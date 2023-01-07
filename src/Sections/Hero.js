@@ -28,7 +28,7 @@ export default function Hero(){
                  duration: 2
                 }}} >
                 <Grid container item sx={{display:'block', padding:'1%'}} >
-                    <Typography variant="h1" fontWeight={460} sx={{lineHeight:1, letterSpacing:7 }} ><span className="grey">WELCOME.</span> </Typography>
+                    <Typography variant="h1" fontWeight={600} sx={{lineHeight:1, letterSpacing:7 }} ><span className="grey">WELCOME.</span> </Typography>
                     <Typography variant="h2" >to a <span className="">glimpse</span> of</Typography>
                     <Typography variant="h3" >my <span className="blue"  style={{fontWeight: 50}}>sanity</span> and <span style={{fontWeight: 50, textDecoration:'line-through', color:'red' }}>insanity</span></Typography>
                 </Grid>
