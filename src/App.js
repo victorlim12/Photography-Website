@@ -4,12 +4,10 @@ import { ThemeProvider, createTheme, responsiveFontSizes } from '@mui/material/s
 import Introduction from "./Sections/Introduction";
 import Showcase from "./Sections/Showcase";
 import Hobbies from "./Sections/Hobbies";
+import CssBaseline from '@mui/material/CssBaseline';
 
 
 let theme = createTheme({
-  palette: {
-    mode: 'light',
-  },
   typography: {
     fontFamily: 'Helvetica Neue, Roboto'
   },
@@ -19,6 +17,7 @@ theme = responsiveFontSizes(theme);
 function App() {
   return (
     <ThemeProvider theme={theme}>
+      <CssBaseline/>
       <div style={{backgroundColor:'black'}}>
       <Hero/>
       <Introduction/>

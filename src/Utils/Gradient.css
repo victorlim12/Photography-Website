@@ -37,3 +37,17 @@ background: linear-gradient(232deg, rgba(34,193,195,1) 0%, rgba(45,173,253,1) 10
     color: #ffffff;
     text-shadow: 1px 0px 20px #ff67c3;
   }
+
+.orange{
+    background: rgb(255,236,74);
+    background: linear-gradient(232deg, rgba(255,236,74,1) 0%, rgba(255,190,0,1) 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+
+.pink{
+    background: rgb(255,236,74);
+background: linear-gradient(232deg, rgba(255,236,74,1) 0%, rgba(255,0,226,1) 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}

@@ -18,7 +18,6 @@ import TEST5 from '../Images/bg2_C.jpeg'
 
 export default function Introduction(){
     const color='rgba(0,0,0,1)'
-    // const color1 ='rgba(0,0,0,0.8)'
     
     return(
         <div 

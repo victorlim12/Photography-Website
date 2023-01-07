@@ -13,11 +13,11 @@ width: fit-content;
   background-image:linear-gradient(${(props)=>props.direction}, ${(props)=>props.gradient}, rgba(255,255,255,0),  rgba(255, 102, 0, 0)),url(${(props) => props.Background});
   background-size: cover;
   background-position: center;
-  /* box-shadow: 0px 0px 1px ${(props) => props.color}; */
   /** Responsive layout **/
   display:flex;
   /** One element on top of the other **/
   flex-direction:column;
+  border-radius: 0.4em;
   /** Vertically at the center **/
   justify-content: center;
   justify-self:'center';
@@ -43,7 +43,6 @@ export const CardContent= styled.div`
     margin-top: ${(props) => props.margin === undefined ? '0%' : props.margin};
     max-Width:80vw;
   }
-
 `
 
 export const HeroVideo = styled.video`
@@ -53,6 +52,7 @@ export const HeroVideo = styled.video`
   height:100%;
 	right: 0;
 	bottom: 0;
+  border-radius: 0.7em;
   object-fit: cover;
 
 	&.fade-in-image { animation: fadeIn 3s; }
