@@ -51,3 +51,9 @@ background: linear-gradient(232deg, rgba(255,236,74,1) 0%, rgba(255,0,226,1) 100
 -webkit-background-clip: text;
 -webkit-text-fill-color: transparent;
 }
+
+.biege{
+    background: linear-gradient(to top, #e6b980 0%, #eacda3 100%);
+    -webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}

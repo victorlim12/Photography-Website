@@ -10,7 +10,6 @@ const ImgBlock=({children, src, setColor, active, setActive, Noice,props, alt})=
 
     const handleMouseOverHandler=()=>{
         color= imgRef.current ;
-        console.log(imgRef)
         const { R, G, B }  =getAverageRGB(color,1)
         BackgroundColor=`rgba(${R}, ${G},${B},1)`
         setColor(BackgroundColor)

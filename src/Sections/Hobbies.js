@@ -12,36 +12,37 @@ import { Grid, Typography} from "@mui/material";
 import '../App.css';
 import '../Utils/Gradient.css'
 import vid from '../Images/vid.mp4'
+import TEST from '../Images/next/radio_C.jpeg'
+import TEST5 from '../Images/next/soundwave.png'
 
 //images (can consider CDN)
 import { HeroVideo } from "../Components/Style";
 
 export default function Introduction(){
-    const color='rgba(0,0,0,1)'
+    const color='rgba(0,0,0,0)'
     const [bgColor, setBgColor] = React.useState("black")
 
 
   const listenScrollEvent = () => {
-      window.scrollY > 4000
+      window.scrollY > window.screen.height*4.2
         ? setBgColor("Normals")
         : setBgColor("normal")
     }
 
   React.useEffect(() => {
-    console.log(window.scrollY)
     window.addEventListener("scroll", listenScrollEvent)
   })
     return(
         <div 
         className={bgColor} style={{
-        transition: "all .5s ease",
-        WebkitTransition: "all 1s ease", 
-        MozTransition: "all 1s ease", width: '100vw', flexDirection:'row', justifyContent:'center', overflow:'hidden'
+        transition: "all 1.5s ease",
+        WebkitTransition: "all 1.5s ease", 
+        MozTransition: "all 1.5s ease", width: '100vw', flexDirection:'row', justifyContent:'center', overflow:'hidden'
         }}>
         <motion.div>
           <Grid container sx={{justifyContent:'center', mt:'3%', height:'100%'}}>
-          <CardContent margin={'5%'} max={'60vw'} style={{alignItems:'center', justifySelf:'center'}}>
-          <Typography variant="h3" fontWeight={600} align='left'>
+          <CardContent margin={'5%'} max={'60vw'} >
+          <Typography variant="h2" fontWeight={600} align='left'>
             <span className="orange" style={{fontWeight:'600'}}>Life in general.</span>
             </Typography>
              <Typography variant="h5" fontWeight={600} align='left'>
@@ -56,11 +57,27 @@ export default function Introduction(){
           <HeroVideo  autoPlay muted loop  className='fade-in-image' >
 				<source src={vid} type="video/mp4"/>
 				</HeroVideo>
-        <CardContent margin={'5%'} style={{alignItems:'center', justifySelf:'center'}}>
-          <Typography variant="h2" fontWeight={500} align='center'><span className="orange" style={{fontWeight:'600'}}> It's just like a Supercut.</span></Typography>
-          <Typography variant="h5" fontWeight={600} align='center'><span className="pink" style={{fontWeight:'600'}}>Song plays in my head like a memory cut out.</span></Typography> 
+        <CardContent>
+          <Typography variant="h2" fontWeight={500} align='center'><span className="orange" style={{fontWeight:'600', filter: 'drop-shadow(4px 3px 3px #333434)'}}> It's just like a Supercut.</span></Typography>
+          <Typography variant="h5" fontWeight={600} align='center'><span className="blue" style={{fontWeight:'600'}}>Things plays out and end in my head.</span></Typography> 
             </CardContent>
-            </Cards>
+          </Cards>
+          <Cards Background={TEST} gradient={color} direction={'to bottom'} direction2={'to bottom'} min={'43vw'} height={'40vh'} resize={'80vw'} hr={'50vh'} 
+            style={{boxShadow:'0px 0px 10px rgba(0,0,0,0.5)', color:'white'}}>
+        <CardContent max={'42vw'}>
+          <Typography variant="h3" fontWeight={600} align='center'><span className="orange"> in my head.</span></Typography>
+          <Typography variant="h5" fontWeight={500} align='center'><span className="">Drowning in feelings. fear of self-exile. eternal loneliness.  </span></Typography> 
+        </CardContent>
+          </Cards>
+          <Cards  gradient={color} direction={'to bottom'} direction2={'to bottom'}  min={'35vw'} height={'40vh'} resize={'80vw'} hr={'25vh'} 
+            style={{ boxShadow:'0px 0px 10px rgba(0,0,0,0.5)'}}>
+        <CardContent max={'35vw'} style={{ color:'black'}}>
+        <Typography variant="h3" fontWeight={600} align='center'><span className="pink" style={{fontWeight:'600'}}> 
+        Pumping Adrenaline</span>
+        </Typography>
+          <Typography variant="h5" fontWeight={500} align='center'> <span className="">Exhilarating. Daunting. Loud. Sometimes.</span> </Typography> 
+        </CardContent>
+          </Cards>
             <CardContent >
           <Typography variant="h1" fontWeight={500} align='center' sx={{letterSpacing: 10}}>
           <br/>

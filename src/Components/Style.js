@@ -17,24 +17,26 @@ width: fit-content;
   display:flex;
   /** One element on top of the other **/
   flex-direction:column;
-  border-radius: 0.4em;
+  border-radius: 0.7em;
   /** Vertically at the center **/
   justify-content: center;
-  justify-self:'center';
-  /* margin-bottom: 2%;
-  margin: 1%; */
+  justify-self: center;
+  /* /* margin-bottom: 2%; */
+  margin: 0.2em; 
 
 
   @media screen and (max-width: 912px) {
-    background-image:linear-gradient(${(props)=>props.direction2}, rgba(0, 0, 0, 0.6), rgba(0,0,0,0.2),  rgba(255, 102, 0, 0)),url(${(props) => props.Background});
+    background-image:linear-gradient(${(props)=>props.direction2}, rgba(0, 0, 0, 0), rgba(0,0,0,0),  rgba(255, 102, 0, 0)),url(${(props) => props.Background});
     min-height:${(props) => props.hr === undefined ? '35vh' : props.hr};
     min-width: ${(props)=>props.resize};
     max-width: ${(props)=>props.resize};
   }
 `
 export const CardContent= styled.div`
-    padding:3%;
+    padding:4%;
     height:inherit;
+    align-items: center;
+    justify-self: center;
     min-Width:${(props)=>props.max};
     max-Width:${(props)=>props.max};
     z-index: 999;
