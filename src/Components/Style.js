@@ -6,7 +6,7 @@ export const Card= styled(motion.div)`
 width: fit-content; 
   /** Sizeable height for the form **/
   height:fit-content;
-  max-Width:75vw;
+  max-Width:${(props)=>props.max === undefined ? '75vw' : props.max};
   min-height:${(props)=>props.height === undefined ? '50vh' : props.height};
   min-Width:${(props)=>props.min};
   /** Black color with opacity **/
@@ -64,3 +64,28 @@ export const HeroVideo = styled.video`
 	  }
 `
  // background-image:linear-gradient(to right, rgba(0, 0, 0, 1), rgba(255,255,255,0),  rgba(255, 102, 0, 0)),url(${(props) => props.Background});
+
+
+export const CarouselWrapper = styled.div`
+display: flex;
+overflow-x: auto;
+min-width: 80vw;
+max-width:90vw;
+margin-right: 2%;
+@media screen and (max-width: 768px) {
+  margin-top: 1%;
+}
+
+::-webkit-scrollbar{
+    width:0;
+}
+`;
+
+export const List = styled.div`
+  display: flex;
+  justify-content: center; // 3
+  flex-flow: row wrap; 
+  @media screen and (max-width: 768px) {
+    margin-top: 1%; 
+  }
+`;

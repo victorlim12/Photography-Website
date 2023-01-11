@@ -4,7 +4,9 @@ import { ThemeProvider, createTheme, responsiveFontSizes } from '@mui/material/s
 import Introduction from "./Sections/Introduction";
 import Showcase from "./Sections/Showcase";
 import Hobbies from "./Sections/Hobbies";
+import ComingSoon from "./Sections/ComingSoon";
 import CssBaseline from '@mui/material/CssBaseline';
+import Dailyfeed from "./Sections/Dailyfeed";
 
 
 let theme = createTheme({
@@ -24,6 +26,8 @@ function App() {
       <Display/>
       <Showcase/>
       <Hobbies/>
+      <Dailyfeed/>
+      <ComingSoon/>
       </div>
     </ThemeProvider>
   );

@@ -24,7 +24,7 @@ export default function Introduction(){
 
 
   const listenScrollEvent = () => {
-      window.scrollY > window.screen.height*4.2
+      window.scrollY > window.screen.height*3.8
         ? setBgColor("Normals")
         : setBgColor("normal")
     }
@@ -35,9 +35,9 @@ export default function Introduction(){
     return(
         <div 
         className={bgColor} style={{
-        transition: "all 1.5s ease",
-        WebkitTransition: "all 1.5s ease", 
-        MozTransition: "all 1.5s ease", width: '100vw', flexDirection:'row', justifyContent:'center', overflow:'hidden'
+        transition: "all 1.2s ease",
+        WebkitTransition: "all 1.2s ease", 
+        MozTransition: "all 1.2s ease", width: '100vw', flexDirection:'row', justifyContent:'center', overflow:'hidden'
         }}>
         <motion.div>
           <Grid container sx={{justifyContent:'center', mt:'3%', height:'100%'}}>
@@ -66,7 +66,7 @@ export default function Introduction(){
             style={{boxShadow:'0px 0px 10px rgba(0,0,0,0.5)', color:'white'}}>
         <CardContent max={'42vw'}>
           <Typography variant="h3" fontWeight={600} align='center'><span className="orange"> in my head.</span></Typography>
-          <Typography variant="h5" fontWeight={500} align='center'><span className="">Drowning in feelings. fear of self-exile. eternal loneliness.  </span></Typography> 
+          <Typography variant="h5" fontWeight={500} align='center'><span className="">Drowning in feelings.  </span></Typography> 
         </CardContent>
           </Cards>
           <Cards  gradient={color} direction={'to bottom'} direction2={'to bottom'}  min={'35vw'} height={'40vh'} resize={'80vw'} hr={'25vh'} 
@@ -78,24 +78,6 @@ export default function Introduction(){
           <Typography variant="h5" fontWeight={500} align='center'> <span className="">Exhilarating. Daunting. Loud. Sometimes.</span> </Typography> 
         </CardContent>
           </Cards>
-            <CardContent >
-          <Typography variant="h1" fontWeight={500} align='center' sx={{letterSpacing: 10}}>
-          <br/>
-            <span className="grey"></span>Coming Soon</Typography>
-                  <Typography variant="h4" fontWeight={600} align='center' sx={{letterSpacing: 8}}>
-                    what you can expect:
-                </Typography>
-                <br/>
-                <Typography variant="h5" fontWeight={600} align='center'>
-                    <span className="blue"> Interactive UI. Clickable Photos. Live Feedback Board. <br/> Most Importantly, more photos/ categories. </span>
-                </Typography>
-                <br/>
-                <Typography variant="h4" fontWeight={600} align='center'>
-                    <span className="cool"> Happy New Year, 2023! </span>
-                </Typography>
-                <br/>
-                <br/>
-            </CardContent>
           </Grid>
           </motion.div>
         </div>
