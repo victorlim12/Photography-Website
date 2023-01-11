@@ -14,8 +14,8 @@ import '../Utils/Gradient.css'
 //images (can consider CDN)
 
 export default function ComingSoon(){
-    const color='rgba(0,0,0,0)'
-    const [bgColor, setBgColor] = React.useState("Normals")
+    // const color='rgba(0,0,0,0)'
+    // const [bgColor, setBgColor] = React.useState("Normals")
 
     return(
         <div 
