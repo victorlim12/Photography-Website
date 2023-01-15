@@ -13,28 +13,16 @@ import '../App.css';
 import '../Utils/Gradient.css'
 import vid from '../Images/vid.mp4'
 import TEST from '../Images/next/radio_C.jpeg'
-import TEST5 from '../Images/next/soundwave.png'
 
 //images (can consider CDN)
 import { HeroVideo } from "../Components/Style";
 
-export default function Introduction(){
+export default function Introduction(props){
     const color='rgba(0,0,0,0)'
-    const [bgColor, setBgColor] = React.useState("black")
 
-
-  const listenScrollEvent = () => {
-      window.scrollY > window.screen.height*3.8
-        ? setBgColor("Normals")
-        : setBgColor("normal")
-    }
-
-  React.useEffect(() => {
-    window.addEventListener("scroll", listenScrollEvent)
-  })
     return(
         <div 
-        className={bgColor} style={{
+        className={props.bgColor} style={{
         transition: "all 1.2s ease",
         WebkitTransition: "all 1.2s ease", 
         MozTransition: "all 1.2s ease", width: '100vw', flexDirection:'row', justifyContent:'center', overflow:'hidden'
@@ -81,5 +69,6 @@ export default function Introduction(){
           </Grid>
           </motion.div>
         </div>
+        
     )
 }

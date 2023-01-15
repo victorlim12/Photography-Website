@@ -33,10 +33,11 @@ width: fit-content;
   }
 `
 export const CardContent= styled.div`
-    padding:4%;
+    padding:2%;
     height:inherit;
     align-items: center;
     justify-self: center;
+    justify-content: center;
     min-Width:${(props)=>props.max};
     max-Width:${(props)=>props.max};
     z-index: 999;
@@ -89,3 +90,14 @@ export const List = styled.div`
     margin-top: 1%; 
   }
 `;
+
+export const GradientOverlay= styled.div`
+   top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  width:100%;
+  height:100%;
+  background-image: linear-gradient(to top ,rgba(245,0,0,1),rgba(255,255,0,1),rgba(0,0,0,1))
+`

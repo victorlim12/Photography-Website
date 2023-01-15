@@ -23,14 +23,8 @@ export default function Dailyfeed(){
         WebkitTransition: "all 1s ease",
         MozTransition: "all 1s ease", width: '100vw', flexDirection:'row', justifyContent:'center', overflow:'hidden'
         }}>
-        <Grid container sx={{justifyContent:'center', mt:'5%', height:'100%'}}>
+        <Grid container sx={{justifyContent:'center', mt:'1%', height:'100%'}}>
         <CardContent max={'95vw'}>
-        <Typography variant="h3" fontWeight={600} align='left'sx={{textDecoration: ''}} display="inline"><span className="crimson" style={{fontWeight:'600'}}> 
-        Daily Feed</span>
-        </Typography>
-        <Typography variant="h5" fontWeight={600} align='left' sx={{}}><span className="" style={{fontWeight:'600'}}> 
-        Kind of Promise this will be more dynamic next time.</span>
-        </Typography>
         </CardContent>
             <CarouselWrapper>
             <Cards gradient={color} direction={'to bottom'} direction2={'to bottom'}  min={'20vw'} max={'20vw'} height={'50vh'} resize={'45vw'} hr={'50vh'} 

@@ -60,8 +60,5 @@ export const green = [
       {
         img: `${TEST13}`,
         title: 'Honey',
-      },
-
-
-
+      }
   ];
