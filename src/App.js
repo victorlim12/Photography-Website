@@ -7,7 +7,6 @@ import Showcase from "./Sections/Showcase";
 import Hobbies from "./Sections/Hobbies";
 import ComingSoon from "./Sections/ComingSoon";
 import CssBaseline from '@mui/material/CssBaseline';
-import Dailyfeed from "./Sections/Dailyfeed";
 import Dailyboard from "./Sections/Dailyboard";
 
 
