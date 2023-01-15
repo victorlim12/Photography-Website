@@ -17,11 +17,12 @@ name: CI
             npm install
             npm run-script build
           env:
-            REACT_APP_apiKey: ${{ secrets.REACT_APP_apiKey }}
-            REACT_APP_authDomain: ${{ secrets.REACT_APP_authDomain }}
-            REACT_APP_projectId: ${{ secrets.REACT_APP_projectId }}
-            REACT_APP_storageBucket: ${{ secrets.REACT_APP_storageBucket }}
-            REACT_APP_appId: ${{ secrets.REACT_APP_appId }}
+            REACT_APP_APIKEY: ${{ secrets.REACT_APP_APIKEY }}
+            REACT_APP_AUTHDOMAIN: ${{ secrets.REACT_APP_AUTHDOMAIN}}
+            REACT_APP_PROJECTID: ${{ secrets.REACT_APP_PROJECTID }}
+            REACT_APP_STORAGEBUCKET: ${{ secrets.REACT_APP_STORAGEBUCKET }}
+            REACT_APP_MESSAGINGSENDERID: ${{ secrets.REACT_APP_MESSAGINGSENDERID }}
+            REACT_APP_APPID: ${{ secrets.REACT_APP_APPID }}
 
         - name: Deploy
           uses: JamesIves/github-pages-deploy-action@releases/v3
