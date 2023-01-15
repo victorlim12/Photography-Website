@@ -1,6 +1,4 @@
-
-
-name: CI
+name: Deploy to GitHub Pages
     on:
       push:
         branches:
@@ -15,7 +13,7 @@ name: CI
         - name: Build
           run: |
             npm install
-            npm run-script build
+            npm run build
           env:
             REACT_APP_APIKEY: ${{ secrets.REACT_APP_APIKEY }}
             REACT_APP_AUTHDOMAIN: ${{ secrets.REACT_APP_AUTHDOMAIN}}
