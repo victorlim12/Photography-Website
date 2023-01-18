@@ -1,6 +1,6 @@
 name: Deploy to GitHub Pages
 on:
-  merge:
+  push:
     branches:
       - main
 jobs:
