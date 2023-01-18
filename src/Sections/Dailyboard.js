@@ -4,19 +4,16 @@ import React from "react";
 //MUI components
 import { Grid, Typography, TextField, Button} from "@mui/material";
 import {CardContent} from '../Components/Style'
-import Cards from "../Components/Cards"
-import Gallery from "../Components/Gallery";
 import Dailyfeed from "./Dailyfeed";
 import {database} from '../Utils/firebase'
 import {ref,push,child,update} from "firebase/database";
-
 
 //css from App (need to rewrite)
 import '../App.css';
 import '../Utils/Gradient.css'
 
 export default function Dailyboard(){
-    const rightshade = 'rgba(0,0,0,0.5)'
+    // const rightshade = 'rgba(0,0,0,0.5)'
 
     const [content, setContent] = React.useState(null);
     const [font, setFont] = React.useState(null);
@@ -55,18 +52,18 @@ export default function Dailyboard(){
         MozTransition: "all 1s ease", width: '100vw', flexDirection:'row', justifyContent:'center', overflow:'hidden'
         }}>
         <Grid container sx={{justifyContent:'center', mt:'5%', height:'100%'}}>
-        <div style={{overflow: 'scroll', width:'100vw', height:'50vh',paddingBottom:'3%', background: 'white',transition: "all .5s ease",
-            WebkitTransition: "all .5s ease",
-            MozTransition: "all .5s ease"}}>
-              <CardContent>
+        <CardContent>
               <Typography variant="h2" fontWeight={600} align='center' sx={{letterSpacing: 2, color:'black'}}>
                    Board Under Maintenance.
                 </Typography>
                 <Typography variant="h5" fontWeight={600} align='center' sx={{letterSpacing: 0, color:'black'}}>
                   <span className="pink">You can type stuff soon.</span>
                 </Typography>
-                <Dailyfeed/>
               </CardContent>
+        <div style={{overflow: 'scroll', width:'100vw', height:'50vh',paddingBottom:'3%', background: 'white',transition: "all .5s ease",
+            WebkitTransition: "all .5s ease",
+            MozTransition: "all .5s ease"}}>
+                <Dailyfeed/>
         </div>
         <CardContent max={'90vw'} style={{alignItems:'center'}}>
           <Grid container spacing={2}>

@@ -1,7 +1,7 @@
 import React from "react";
 
 //own utils
-import {CardContent, GradientOverlay} from '../Components/Style'
+import {CardContent} from '../Components/Style'
 
 //MUI components
 import { Grid, Typography} from "@mui/material";

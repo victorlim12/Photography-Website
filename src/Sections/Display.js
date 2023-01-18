@@ -3,7 +3,6 @@ import { motion } from "framer-motion";
 
 //own utils
 import {CardContent, Card} from '../Components/Style'
-import Cards from "../Components/Cards";
 
 //MUI components
 import { Grid, Typography} from "@mui/material";
@@ -16,7 +15,6 @@ import '../Utils/Gradient.css'
 import TEST6 from '../Images/bnw_C.jpeg'
 
 export default function Display(){
-    const color='rgba(0,0,0,1)'
     
     return(
         <div 
