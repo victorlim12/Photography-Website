@@ -33,10 +33,13 @@ function App() {
   React.useEffect(() => {
     window.addEventListener("scroll", listenScrollEvent)
   })
+  
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline/>
-      <div style={{backgroundColor:'black'}}>
+      <div style={{backgroundColor: window.scrollY > window.screen.height*3.8
+        ? 'white'
+        : 'black'}}>
       <Hero/>
       <Introduction/>
       <Display/>

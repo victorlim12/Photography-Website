@@ -19,9 +19,7 @@ export default function Display(){
     return(
         <div 
         className={'normal'} style={{
-        transition: "all .5s ease",
-        WebkitTransition: "all 1s ease",
-        MozTransition: "all 1s ease", width: '100vw', flexDirection:'row', justifyContent:'center', overflow:'hidden'
+        width: '100vw', flexDirection:'row', justifyContent:'center', overflow:'hidden'
         }}>
         <Grid container sx={{justifyContent:'center', mt:'5%', height:'100%'}}>
           <Card direction={'to top'} direction2={'to bottom'} min={'100vw'} height={'100%'} resize={'100vw'} hr={'100%'}

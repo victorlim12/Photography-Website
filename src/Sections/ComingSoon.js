@@ -14,15 +14,11 @@ import '../Utils/Gradient.css'
 //images (can consider CDN)
 
 export default function ComingSoon(props){
-    // const color='rgba(0,0,0,0)'
-    // const [bgColor, setBgColor] = React.useState("Normals")
 
     return(
         <div 
         className={props.bgColor} style={{
-        transition: "all 1.5s ease",
-        WebkitTransition: "all 1.5s ease", 
-        MozTransition: "all 1.5s ease", width: '100vw', flexDirection:'row', justifyContent:'center', overflow:'hidden'
+      width: '100vw', flexDirection:'row', justifyContent:'center', overflow:'hidden'
         }}>
         <motion.div>
           <Grid container sx={{justifyContent:'center', mt:'3%', height:'100%'}}>

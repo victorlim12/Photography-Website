@@ -22,9 +22,7 @@ export default function Introduction(){
     return(
         <div 
         className={'normal'} style={{
-        transition: "all .5s ease",
-        WebkitTransition: "all 1s ease",
-        MozTransition: "all 1s ease", width: '100vw', flexDirection:'row', justifyContent:'center', overflow:'hidden'
+        width: '100vw', flexDirection:'row', justifyContent:'center', overflow:'hidden'
         }}>
         <motion.div>
           <Grid container sx={{justifyContent:'center', mt:'1%', height:'100%'}}>

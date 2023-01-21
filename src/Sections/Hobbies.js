@@ -23,9 +23,9 @@ export default function Introduction(props){
     return(
         <div 
         className={props.bgColor} style={{
-        transition: "all 1.2s ease",
-        WebkitTransition: "all 1.2s ease", 
-        MozTransition: "all 1.2s ease", width: '100vw', flexDirection:'row', justifyContent:'center', overflow:'hidden'
+        transition: "all 1s ease",
+        WebkitTransition: "all 0.7s ease", 
+        MozTransition: "all 0.7s ease", width: '100vw', flexDirection:'row', justifyContent:'center', overflow:'hidden'
         }}>
         <motion.div>
           <Grid container sx={{justifyContent:'center', mt:'3%', height:'100%'}}>

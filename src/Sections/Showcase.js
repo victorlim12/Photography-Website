@@ -21,9 +21,7 @@ export default function Showcase(){
     return(
         <div 
         className={'notnormal'} style={{
-        transition: "all .5s ease",
-        WebkitTransition: "all 1s ease",
-        MozTransition: "all 1s ease", width: '100vw',flexDirection:'row', overflow:'hidden'
+         width: '100vw',flexDirection:'row', overflow:'hidden'
         }}>
         <Grid container sx={{justifyContent:'center'}}>
         <CardContent>
