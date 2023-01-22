@@ -1,23 +1,22 @@
 import React from "react";
 
-
 //MUI components
 import { Grid, Typography, TextField, Button} from "@mui/material";
 import {CardContent} from '../Components/Style'
-import Dailyfeed from "./Dailyfeed";
-import {database} from '../Utils/firebase'
-import {ref,push,child,update} from "firebase/database";
+import { firestore } from "../Utils/firebase";
+import { collection, addDoc, getDocs } from "firebase/firestore";
+import Board from "./Board";
 
 //css from App (need to rewrite)
 import '../App.css';
 import '../Utils/Gradient.css'
 
 export default function Dailyboard(){
-    // const rightshade = 'rgba(0,0,0,0.5)'
 
     const [content, setContent] = React.useState(null);
     const [font, setFont] = React.useState(null);
     const [card, setCard] = React.useState(null);
+    const [data, setData] = React.useState([]);
 
     const handleInputChange = (e) => {
         const {id , value} = e.target;
@@ -31,18 +30,34 @@ export default function Dailyboard(){
           setCard(value);
       }
     }
-
-    const handleSubmit = () =>{
-        let obj = {
+    
+    const handleSubmit = async(e) =>{
+            try {
+              const docRef = await addDoc(collection(firestore, "review"), {
                 Content : content,
                 Fontcolor:font,
-                Cardcolor:card,
-            }       
-        const newPostKey = push(child(ref(database), 'posts')).key;
-        const updates = {};
-        updates['/' + newPostKey] = obj
-        return update(ref(database), updates);
+                Cardcolor:card,  
+              });
+              console.log("Document written with ID: ", docRef.id);
+            } catch (e) {
+              console.error("Error adding document: ", e);
+            } 
     }
+    
+    const fetchPost = async () => {
+      await getDocs(collection(firestore, "review"))
+          .then((querySnapshot)=>{              
+              const newData = querySnapshot.docs
+                  .map((doc) => ({...doc.data(), id:doc.id }));
+              setData(newData);           
+          })
+  }
+ 
+  React.useEffect(()=>{
+      fetchPost();
+      console.log(data)
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [])
 
     return(
         <div 
@@ -61,7 +76,7 @@ export default function Dailyboard(){
         <div style={{overflow: 'scroll', width:'100vw', height:'50vh',paddingBottom:'3%', background: 'white',transition: "all .5s ease",
             WebkitTransition: "all .5s ease",
             MozTransition: "all .5s ease"}}>
-                <Dailyfeed/>
+                <Board data={data}/>
         </div>
         <CardContent max={'90vw'} style={{alignItems:'center'}}>
           <Grid container spacing={2}>
