@@ -1,7 +1,6 @@
 // import { css } from 'styled-components'
 import styled from "styled-components";
 import { motion } from "framer-motion";
-import { MorphedGlass } from "../Glass-Morphism/Morph-style";
 
 export const Card = styled(motion.div)`
   width: fit-content;
