@@ -10,7 +10,7 @@ width: fit-content;
   min-height:${(props)=>props.height === undefined ? '50vh' : props.height};
   min-Width:${(props)=>props.min};
   /** Black color with opacity **/
-  background-image:linear-gradient(${(props)=>props.direction}, ${(props)=>props.gradient}, rgba(255,255,255,0),  rgba(255, 102, 0, 0)),url(${(props) => props.Background});
+  background-image:linear-gradient(${(props)=>props.direction}, ${(props)=>props.gradient}, rgba(255,255,255,0),  rgba(255, 102, 0, 0)),url(${(props) => props.backgroundimg});
   background-size: cover;
   background-position: center;
   /** Responsive layout **/
@@ -26,7 +26,7 @@ width: fit-content;
 
 
   @media screen and (max-width: 912px) {
-    background-image:linear-gradient(${(props)=>props.direction2}, rgba(0, 0, 0, 0), rgba(0,0,0,0),  rgba(255, 102, 0, 0)),url(${(props) => props.Background});
+    background-image:linear-gradient(${(props)=>props.direction2}, rgba(0, 0, 0, 0), rgba(0,0,0,0),  rgba(255, 102, 0, 0)),url(${(props) => props.backgroundimg});
     min-height:${(props) => props.hr === undefined ? '35vh' : props.hr};
     min-width: ${(props)=>props.resize};
     max-width: ${(props)=>props.resize};
@@ -34,7 +34,6 @@ width: fit-content;
 `
 export const CardContent= styled.div`
     padding:2%;
-    height:inherit;
     align-items: center;
     justify-self: center;
     justify-content: center;
@@ -43,6 +42,7 @@ export const CardContent= styled.div`
     z-index: 999;
 
     @media screen and (max-width: 912px) {
+    padding:2%;
     margin-top: ${(props) => props.margin === undefined ? '0%' : props.margin};
     max-Width:80vw;
   }
@@ -64,8 +64,6 @@ export const HeroVideo = styled.video`
 		100% { opacity: 1; }
 	  }
 `
- // background-image:linear-gradient(to right, rgba(0, 0, 0, 1), rgba(255,255,255,0),  rgba(255, 102, 0, 0)),url(${(props) => props.Background});
-
 
 export const CarouselWrapper = styled.div`
 display: flex;

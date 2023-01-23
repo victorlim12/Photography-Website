@@ -1,23 +1,24 @@
 import React from "react";
 
-
 //MUI components
 import { Grid, Typography, TextField, Button} from "@mui/material";
 import {CardContent} from '../Components/Style'
-import Dailyfeed from "./Dailyfeed";
-import {database} from '../Utils/firebase'
-import {ref,push,child,update} from "firebase/database";
+import { firestore } from "../Utils/firebase";
+import { collection, addDoc, getDocs } from "firebase/firestore";
+import Board from "./Board";
 
 //css from App (need to rewrite)
 import '../App.css';
 import '../Utils/Gradient.css'
 
 export default function Dailyboard(){
-    // const rightshade = 'rgba(0,0,0,0.5)'
 
-    const [content, setContent] = React.useState(null);
-    const [font, setFont] = React.useState(null);
-    const [card, setCard] = React.useState(null);
+    const [content, setContent] = React.useState();
+    const [font, setFont] = React.useState();
+    const [card, setCard] = React.useState();
+    const [data, setData] = React.useState([]);
+    
+    let like=0
 
     const handleInputChange = (e) => {
         const {id , value} = e.target;
@@ -31,18 +32,40 @@ export default function Dailyboard(){
           setCard(value);
       }
     }
-
-    const handleSubmit = () =>{
-        let obj = {
+    
+    const handleSubmit = async(e) =>{
+            try {
+              const docRef = await addDoc(collection(firestore, "review"), {
                 Content : content,
                 Fontcolor:font,
-                Cardcolor:card,
-            }       
-        const newPostKey = push(child(ref(database), 'posts')).key;
-        const updates = {};
-        updates['/' + newPostKey] = obj
-        return update(ref(database), updates);
+                Cardcolor:card,  
+                Likes: like
+              });
+              console.log("Document written with ID: ", docRef.id);
+              setContent('')
+              setFont('')
+              setCard('')
+              fetchPost()
+            } catch (e) {
+              console.error("Error adding document: ", e);
+            } 
     }
+    
+    const fetchPost = async () => {
+      await getDocs(collection(firestore, "review"))
+          .then((querySnapshot)=>{              
+              const newData = querySnapshot.docs
+                  .map((doc) => ({...doc.data(), id:doc.id }));
+              setData(newData);        
+          })
+  }
+
+ 
+  React.useEffect(()=>{
+      fetchPost();
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [data])
+
 
     return(
         <div 
@@ -55,13 +78,13 @@ export default function Dailyboard(){
                    Board Under Maintenance.
                 </Typography>
                 <Typography variant="h5" fontWeight={600} align='center' sx={{letterSpacing: 0, color:'black'}}>
-                  <span className="pink">You can type stuff soon.</span>
+                  <span className="pink">You can type stuff NOW.</span>
                 </Typography>
               </CardContent>
         <div style={{overflow: 'scroll', width:'100vw', height:'50vh',paddingBottom:'3%', background: 'white',transition: "all .5s ease",
             WebkitTransition: "all .5s ease",
             MozTransition: "all .5s ease"}}>
-                <Dailyfeed/>
+                <Board data={data} setData={setData}/>
         </div>
         <CardContent max={'90vw'} style={{alignItems:'center'}}>
           <Grid container spacing={2}>
@@ -75,6 +98,7 @@ export default function Dailyboard(){
           variant="outlined"
           size="large"
           rows={1}
+          required
           />
             </Grid>
             <Grid container item xs={5} >
@@ -86,6 +110,7 @@ export default function Dailyboard(){
           fullWidth
           variant="outlined"
           rows={1}
+          required
           />
             </Grid>
             <Grid container item xs={5} >
@@ -97,6 +122,7 @@ export default function Dailyboard(){
           fullWidth
           variant="outlined"
           rows={1}
+          required
           />
             </Grid>
             <Grid container item xs={2} >
