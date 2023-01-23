@@ -36,7 +36,7 @@ export default function Introduction(){
             </Typography>
             </CardContent>
             <Cards
-            Background={TEST5} direction={'to bottom'} direction2={'to bottom'} gradient={color} min={'90vw'} resize={'95vw'} style={{justifySelf:'center'}}>
+            backgroundimg={TEST5} direction={'to bottom'} direction2={'to bottom'} gradient={color} min={'90vw'} resize={'95vw'} style={{justifySelf:'center'}}>
             <CardContent max={'90vw'} margin={'1%'} style={{alignItems:'center', justifyContent:'center'}}>
                   <Typography variant="h1" fontWeight={600} align="center"><span className="grey">Afloat.</span></Typography>
                   <Typography variant="h5" fontWeight={500} align="center">stay afloat. head above water. </Typography>
@@ -56,7 +56,7 @@ export default function Introduction(){
                     Personally, it is a nature by-product of observation on life. how moods are portrayed and conveyed. how certain scenes are reimagined. how memories are kept.  </span><br/>
             </Typography>
             </CardContent>
-            <Cards Background={TEST} direction={'to top'} direction2={'to bottom'} min={'50vw'} height={'60vh'} resize={'95vw'} hr={'52vh'}
+            <Cards direction={'to top'} direction2={'to bottom'} min={'50vw'} height={'60vh'} resize={'95vw'} hr={'52vh'}
             style={{justifySelf:'center', 
             backgroundImage:`linear-gradient(to bottom , rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0),rgba(0,0,0,0.8)), url(${TEST})`}}></Cards>
             </Cards>

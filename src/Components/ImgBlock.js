@@ -2,7 +2,7 @@ import React from "react"
 import { getAverageRGB } from "../Utils/Color"
 import { motion } from "framer-motion"; 
 
-const ImgBlock=({ src, setColor, active, setActive, Noice,props, alt})=>{
+const ImgBlock=({ src, setColor, active, Noice,props, alt})=>{
 
     const imgRef = React.useRef()
     let color =''
@@ -13,7 +13,6 @@ const ImgBlock=({ src, setColor, active, setActive, Noice,props, alt})=>{
         const { R, G, B }  =getAverageRGB(color,1)
         BackgroundColor=`rgba(${R}, ${G},${B},1)`
         setColor(BackgroundColor)
-        setActive(active)
       }
     
     const Leave=()=>{

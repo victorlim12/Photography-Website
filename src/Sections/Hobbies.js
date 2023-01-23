@@ -50,7 +50,7 @@ export default function Introduction(props){
           <Typography variant="h5" fontWeight={600} align='center'><span className="blue" style={{fontWeight:'600'}}>Things plays out and end in my head.</span></Typography> 
             </CardContent>
           </Cards>
-          <Cards Background={TEST} gradient={color} direction={'to bottom'} direction2={'to bottom'} min={'43vw'} height={'40vh'} resize={'80vw'} hr={'50vh'} 
+          <Cards backgroundimg={TEST} gradient={color} direction={'to bottom'} direction2={'to bottom'} min={'43vw'} height={'40vh'} resize={'80vw'} hr={'50vh'} 
             style={{boxShadow:'0px 0px 10px rgba(0,0,0,0.5)', color:'white'}}>
         <CardContent max={'42vw'}>
           <Typography variant="h3" fontWeight={600} align='center'><span className="orange"> in my head.</span></Typography>
