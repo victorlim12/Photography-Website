@@ -19,7 +19,9 @@ const firebaseConfig = {
   appId: process.env.REACT_APP_APPID,
 };
 
-const Firebase = initializeApp(firebaseConfig);
+const Firebase = initializeApp(firebaseConfig, {
+  experimentalForceLongPolling: true,
+});
 
 // eslint-disable-next-line no-unused-vars
 const appCheck = initializeAppCheck(Firebase, {
