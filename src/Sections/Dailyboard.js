@@ -60,7 +60,6 @@ export default function Dailyboard() {
   };
 
   React.useEffect(() => {
-    console.log(process.env.REACT_CAPTCHA_KEY);
     fetchPost();
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);

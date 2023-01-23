@@ -22,7 +22,7 @@ const Firebase = initializeApp(firebaseConfig, {
 
 // eslint-disable-next-line no-unused-vars
 const appCheck = initializeAppCheck(Firebase, {
-  provider: new ReCaptchaV3Provider(process.env.REACT_CAPTCHA_KEY),
+  provider: new ReCaptchaV3Provider(process.env.REACT_APP_CAPTCHA_KEY),
   isTokenAutoRefreshEnabled: true,
 });
 

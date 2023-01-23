@@ -3,7 +3,9 @@ import { Nav, NavbarContainer } from "../Components/Style";
 export default function Navbar() {
   return (
     <Nav>
-      <NavbarContainer></NavbarContainer>
+      <NavbarContainer>
+        {/* <MenuLink to="/">Test</MenuLink> */}
+      </NavbarContainer>
     </Nav>
   );
 }

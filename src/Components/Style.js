@@ -1,6 +1,7 @@
 // import { css } from 'styled-components'
 import styled from "styled-components";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 export const Card = styled(motion.div)`
   width: fit-content;
@@ -126,9 +127,10 @@ export const GradientOverlay = styled.div`
 
 export const Nav = styled.nav`
   font-size: 18px;
+  margin: 0%;
   position: sticky;
   top: 0;
-  z-index: 999;
+  z-index: 99999999;
   height: 60px;
   background-color: rgba(0, 0, 0, 0.4);
   /* box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.5); */
@@ -136,7 +138,8 @@ export const Nav = styled.nav`
   display: flex;
   justify-content: center;
   align-items: center;
-  backdrop-filter: blur(20px);
+  backdrop-filter: blur(10px);
+  mix-blend-mode: "normal";
 `;
 
 export const NavbarContainer = styled.div`
@@ -144,4 +147,33 @@ export const NavbarContainer = styled.div`
   justify-content: space-between;
   align-items: center;
   height: 80px;
+`;
+
+export const MenuLink = styled(Link)`
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  height: 100%;
+  transition: all 0.2s ease;
+
+  &:hover {
+    color: #e38b06;
+    transform: traslateY(-3rem);
+  }
+  &:active {
+    transform: traslateY(3rem);
+    color: #e38b06;
+  }
+
+  @media only screen and (max-width: 1000px) {
+    display: block;
+    padding: 3rem;
+    text-align: center;
+    transition: all 0.2s ease;
+  }
 `;
