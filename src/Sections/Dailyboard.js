@@ -18,7 +18,6 @@ export default function Dailyboard() {
   const [data, setData] = React.useState([]);
 
   let like = 0;
-
   const handleInputChange = (e) => {
     const { id, value } = e.target;
     if (id === "content") {
@@ -61,9 +60,10 @@ export default function Dailyboard() {
   };
 
   React.useEffect(() => {
+    console.log(process.env.REACT_CAPTCHA_KEY);
     fetchPost();
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [setData]);
+  }, []);
 
   return (
     <div

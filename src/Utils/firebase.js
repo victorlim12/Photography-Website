@@ -6,10 +6,6 @@ const {
   ReCaptchaV3Provider,
 } = require("firebase/app-check");
 
-// TODO: Add SDKs for Firebase products that you want to use
-// https://firebase.google.com/docs/web/setup#available-libraries
-
-// Your web app's Firebase configuration
 const firebaseConfig = {
   apiKey: process.env.REACT_APP_APIKEY,
   authDomain: process.env.REACT_APP_AUTHDOMAIN,
@@ -20,7 +16,7 @@ const firebaseConfig = {
 };
 
 const Firebase = initializeApp(firebaseConfig, {
-  experimentalForceLongPolling: true,
+  experimentalAutoDetectLongPolling: true,
   useFetchStreams: false,
 });
 

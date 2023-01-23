@@ -12,6 +12,7 @@ import Hobbies from "./Sections/Hobbies";
 import ComingSoon from "./Sections/ComingSoon";
 import CssBaseline from "@mui/material/CssBaseline";
 import Dailyboard from "./Sections/Dailyboard";
+import Navbar from "./Sections/Navbar";
 
 let theme = createTheme({
   palette: {
@@ -45,6 +46,7 @@ function App() {
             window.scrollY > window.screen.height * 3.8 ? "white" : "black",
         }}
       >
+        <Navbar />
         <Hero />
         <Introduction />
         <Display />

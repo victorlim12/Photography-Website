@@ -1,6 +1,7 @@
 // import { css } from 'styled-components'
 import styled from "styled-components";
 import { motion } from "framer-motion";
+import { MorphedGlass } from "../Glass-Morphism/Morph-style";
 
 export const Card = styled(motion.div)`
   width: fit-content;
@@ -122,4 +123,26 @@ export const GradientOverlay = styled.div`
     rgba(255, 255, 0, 1),
     rgba(0, 0, 0, 1)
   );
+`;
+
+export const Nav = styled.nav`
+  font-size: 18px;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  height: 60px;
+  background-color: rgba(0, 0, 0, 0.4);
+  /* box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.5); */
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.15);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(20px);
+`;
+
+export const NavbarContainer = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
 `;
