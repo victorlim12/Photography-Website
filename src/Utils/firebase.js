@@ -1,6 +1,10 @@
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
 import { getFirestore } from "firebase/firestore";
+const {
+  initializeAppCheck,
+  ReCaptchaV3Provider,
+} = require("firebase/app-check");
 
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
@@ -14,5 +18,13 @@ const firebaseConfig = {
   messagingSenderId: process.env.REACT_APP_MESSAGINGSENDERID,
   appId: process.env.REACT_APP_APPID,
 };
-const Firebase = initializeApp(firebaseConfig, {});
+
+const Firebase = initializeApp(firebaseConfig);
+
+// eslint-disable-next-line no-unused-vars
+const appCheck = initializeAppCheck(Firebase, {
+  provider: new ReCaptchaV3Provider(process.env.REACT_CAPTCHA_KEY),
+  isTokenAutoRefreshEnabled: true,
+});
+
 export const firestore = getFirestore(Firebase);

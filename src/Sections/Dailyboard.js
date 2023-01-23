@@ -62,8 +62,9 @@ export default function Dailyboard() {
 
   React.useEffect(() => {
     fetchPost();
+    console.log("etst");
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+  }, [setData]);
 
   return (
     <div
@@ -131,6 +132,7 @@ export default function Dailyboard() {
             <Grid container item xs={5}>
               <TextField
                 type="text"
+                disabled={!content}
                 value={card}
                 onChange={(e) => handleInputChange(e)}
                 label="Card Color"
@@ -144,6 +146,7 @@ export default function Dailyboard() {
             </Grid>
             <Grid container item xs={5}>
               <TextField
+                disabled={!card}
                 type="text"
                 value={font}
                 onChange={(e) => handleInputChange(e)}
@@ -158,6 +161,7 @@ export default function Dailyboard() {
             </Grid>
             <Grid container item xs={2}>
               <Button
+                disabled={!font}
                 onClick={() => handleSubmit()}
                 type="submit"
                 fullWidth
