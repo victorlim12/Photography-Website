@@ -37,28 +37,17 @@ export default function ComingSoon(props) {
               sx={{ letterSpacing: 10 }}
             >
               <br />
-              <span className="grey"></span>Coming Soon
+              <span className="grey"></span>Thank You For Visiting!
             </Typography>
-            <Typography
-              variant="h4"
-              fontWeight={600}
-              align="center"
-              sx={{ letterSpacing: 8 }}
-            >
-              what you can expect:
+            <Typography variant="h4" fontWeight={600} align="center">
+              <span className="cool"> - 2024 - </span>
             </Typography>
             <br />
             <Typography variant="h5" fontWeight={600} align="center">
-              <span className="blue">
-                {" "}
-                Interactive UI. Clickable Photos. Live Feedback Board. <br />{" "}
-                Most Importantly, more photos/ categories.{" "}
-              </span>
+              <span className="blue"> Cheers, Victor!</span>
             </Typography>
             <br />
-            <Typography variant="h4" fontWeight={600} align="center">
-              <span className="cool"> Happy New Year, 2023! </span>
-            </Typography>
+
             <br />
             <br />
           </CardContent>
