@@ -16,7 +16,6 @@ const Colorpick = ({
 
   const handleMouseOverHandler = () => {
     color = imgRef.current;
-    console.log(imgRef);
     const { R, G, B } = getAverageRGB(color, 1);
     BackgroundColor = `rgba(${R}, ${G},${B},0.5)`;
     setColor(BackgroundColor);

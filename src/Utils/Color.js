@@ -1,5 +1,4 @@
 export function getAverageRGB(imageElement, ratio) {
-  console.log(imageElement);
   const canvas = document.createElement("canvas");
 
   let height = (canvas.height = imageElement.naturalHeight);
